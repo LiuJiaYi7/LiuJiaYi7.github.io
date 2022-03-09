@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "LiuJiaYi7's blog • All posts by \"小结\" tag",
+    "description": "欢迎来到小七的笔记空间，我们在这里一起相互交流学习吧！",
+    "home_page_url": "https://LiuJiaYi7.github.io",
+    "items": [
+        {
+            "id": "https://liujiayi7.github.io/2021/07/12/%E5%85%B3%E4%BA%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%BB%E9%A1%B5%E7%9A%84%E7%BE%8E%E5%8C%96%EF%BC%88Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%EF%BC%89/",
+            "url": "https://liujiayi7.github.io/2021/07/12/%E5%85%B3%E4%BA%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%BB%E9%A1%B5%E7%9A%84%E7%BE%8E%E5%8C%96%EF%BC%88Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%EF%BC%89/",
+            "title": "关于浏览器主页的美化（Chrome浏览器）",
+            "date_published": "2021-07-12T10:40:45.000Z",
+            "content_html": "<h1 id=\"关于浏览器主页的美化chrome浏览器\"><a class=\"markdownIt-Anchor\" href=\"#关于浏览器主页的美化chrome浏览器\">#</a> 关于浏览器主页的美化（Chrome 浏览器）</h1>\n<h2 id=\"一-关于青柠起始页\"><a class=\"markdownIt-Anchor\" href=\"#一-关于青柠起始页\">#</a> 一、关于青柠起始页：</h2>\n<p>青柠起始页是由在校大学生制作的浏览器主页，青柠起始页十分符合当前大众的审美，简洁明了，相较于 360 主页、2345 主页等众多主页，青柠起始页没有任何广告，你不会时不时就看见一些包含着性暗示的广告，你更不会看见那些随处可见的营销号推送。</p>\n<p><img src=\"https://i.loli.net/2021/07/13/2E7CuaRT8jqoyxL.jpg\" alt></p>\n<p>​                                                                                                      起始页主界面</p>\n<p>这是青柠起始页的主页，简洁大方，干净。没有任何你会觉得不舒服的地方。</p>\n<p>搜索栏干净，不会有任何广告。而且下面可以自由切换搜索引擎。同时也支持自己添加搜索引擎。下方是<a href=\"https://link.zhihu.com/?target=https%3A//hitokoto.cn/\"> Hitokoto - 一言</a>的一句话，每次打开都会改变。你可以将它添加到便签。</p>\n<p><img src=\"https://i.loli.net/2021/07/13/Y2kJz4sSfHuTiMt.jpg\" alt></p>\n<p>​                                                                                                         快捷捷径</p>\n<p>在空白界面鼠标右击或点击时钟可以进入到二级界面。这里同样没有任何广告。左下角是当地的天气。右下角是对当前壁纸的喜欢按钮（该功能仅支持勾选背景图像为必应时才会出现，一会儿会详细介绍）。中间前两行是预设捷径，单击就可以进入到对应的网站。第三行及以后是自定义捷径。可以无限制添加。滚动鼠标滚轮会进入到便签界面。你可以在这里管理自己的便签，以及刚刚添加的一言。同样便签也支持无限次添加。便签可以云同步，只需要登陆你的账户。</p>\n<p>你可以将便签固定，无论你在什么界面，都会存在。</p>\n<p>同时青柠起始页还拥有丰富的自定义选项。点击右上角的的齿轮进入设置可以自由更改。包含暗黑模式，自定义效果，主题颜色等多种选项，也可以修改、自定义背景图像，还可以更改搜索引擎。</p>\n<p><img src=\"https://i.loli.net/2021/07/13/mOTQcedRN2485YJ.jpg\" alt></p>\n<p>搜索引擎可以按自己的需要更换</p>\n<h2 id=\"二-怎样设置青柠起始页为默认浏览器主页\"><a class=\"markdownIt-Anchor\" href=\"#二-怎样设置青柠起始页为默认浏览器主页\">#</a> 二、怎样设置青柠起始页为默认浏览器主页</h2>\n<p>1、打开谷歌浏览器，选中右上角图标</p>\n<p><img src=\"https://i.loli.net/2021/07/13/CBTmYgREzj65XtP.jpg\" alt></p>\n<p>右上角图标</p>\n<p>2、打开后点击设置</p>\n<p><img src=\"https://i.loli.net/2021/07/13/6OigtnE8zDXvQKm.jpg\" alt></p>\n<p>3、在左侧边栏选中搜索引擎</p>\n<p><img src=\"https://i.loli.net/2021/07/13/mUrF9HhvgAe1x6l.jpg\" alt></p>\n<p>4、选中特定网页或一组网页</p>\n<p><img src=\"https://i.loli.net/2021/07/13/biE6KLyjrV8zJmA.jpg\" alt></p>\n<p>5、点击添加新网页，输入青柠起始页网址即可</p>\n<p><img src=\"https://i.loli.net/2021/07/13/921xZwtQcgNTLb4.jpg\" alt></p>\n<p>6、重启浏览器即可</p>\n<h2 id=\"三-总结\"><a class=\"markdownIt-Anchor\" href=\"#三-总结\">#</a> 三、总结</h2>\n<h2 id=\"1找到右上角的工具栏按钮并点击\"><a class=\"markdownIt-Anchor\" href=\"#1找到右上角的工具栏按钮并点击\">#</a> 【1】找到右上角的工具栏按钮并点击。</h2>\n<h2 id=\"2找到设置按钮并且打开设置页面\"><a class=\"markdownIt-Anchor\" href=\"#2找到设置按钮并且打开设置页面\">#</a> 【2】找到设置按钮，并且打开设置页面。</h2>\n<h2 id=\"3在启动时功能处设置默认打开页面\"><a class=\"markdownIt-Anchor\" href=\"#3在启动时功能处设置默认打开页面\">#</a> 【3】在启动时功能处设置默认打开页面。</h2>\n<h2 id=\"4设置即可无需点击确定重启浏览器即可\"><a class=\"markdownIt-Anchor\" href=\"#4设置即可无需点击确定重启浏览器即可\">#</a> 【4】设置即可，无需点击确定，重启浏览器即可。</h2>\n",
+            "tags": [
+                "小结"
+            ]
+        }
+    ]
+}

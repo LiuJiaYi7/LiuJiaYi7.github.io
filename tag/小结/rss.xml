@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>LiuJiaYi7&#39;s blog • Posts by &#34;小结&#34; tag</title>
+        <link>https://LiuJiaYi7.github.io</link>
+        <description>欢迎来到小七的笔记空间，我们在这里一起相互交流学习吧！</description>
+        <language>zh-CN</language>
+        <pubDate>Mon, 12 Jul 2021 18:40:45 +0800</pubDate>
+        <lastBuildDate>Mon, 12 Jul 2021 18:40:45 +0800</lastBuildDate>
+        <category>随笔</category>
+        <category>笔记</category>
+        <category>习题</category>
+        <category>基本命令</category>
+        <category>记录</category>
+        <category>小结</category>
+        <item>
+            <guid isPermalink="true">https://liujiayi7.github.io/2021/07/12/%E5%85%B3%E4%BA%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%BB%E9%A1%B5%E7%9A%84%E7%BE%8E%E5%8C%96%EF%BC%88Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%EF%BC%89/</guid>
+            <title>关于浏览器主页的美化（Chrome浏览器）</title>
+            <link>https://liujiayi7.github.io/2021/07/12/%E5%85%B3%E4%BA%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%BB%E9%A1%B5%E7%9A%84%E7%BE%8E%E5%8C%96%EF%BC%88Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%EF%BC%89/</link>
+            <category>小结</category>
+            <pubDate>Mon, 12 Jul 2021 18:40:45 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;关于浏览器主页的美化chrome浏览器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关于浏览器主页的美化chrome浏览器&#34;&gt;#&lt;/a&gt; 关于浏览器主页的美化（Chrome 浏览器）&lt;/h1&gt;
+&lt;h2 id=&#34;一-关于青柠起始页&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-关于青柠起始页&#34;&gt;#&lt;/a&gt; 一、关于青柠起始页：&lt;/h2&gt;
+&lt;p&gt;青柠起始页是由在校大学生制作的浏览器主页，青柠起始页十分符合当前大众的审美，简洁明了，相较于 360 主页、2345 主页等众多主页，青柠起始页没有任何广告，你不会时不时就看见一些包含着性暗示的广告，你更不会看见那些随处可见的营销号推送。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/2E7CuaRT8jqoyxL.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;​                                                                                                      起始页主界面&lt;/p&gt;
+&lt;p&gt;这是青柠起始页的主页，简洁大方，干净。没有任何你会觉得不舒服的地方。&lt;/p&gt;
+&lt;p&gt;搜索栏干净，不会有任何广告。而且下面可以自由切换搜索引擎。同时也支持自己添加搜索引擎。下方是&lt;a href=&#34;https://link.zhihu.com/?target=https%3A//hitokoto.cn/&#34;&gt; Hitokoto - 一言&lt;/a&gt;的一句话，每次打开都会改变。你可以将它添加到便签。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/Y2kJz4sSfHuTiMt.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;​                                                                                                         快捷捷径&lt;/p&gt;
+&lt;p&gt;在空白界面鼠标右击或点击时钟可以进入到二级界面。这里同样没有任何广告。左下角是当地的天气。右下角是对当前壁纸的喜欢按钮（该功能仅支持勾选背景图像为必应时才会出现，一会儿会详细介绍）。中间前两行是预设捷径，单击就可以进入到对应的网站。第三行及以后是自定义捷径。可以无限制添加。滚动鼠标滚轮会进入到便签界面。你可以在这里管理自己的便签，以及刚刚添加的一言。同样便签也支持无限次添加。便签可以云同步，只需要登陆你的账户。&lt;/p&gt;
+&lt;p&gt;你可以将便签固定，无论你在什么界面，都会存在。&lt;/p&gt;
+&lt;p&gt;同时青柠起始页还拥有丰富的自定义选项。点击右上角的的齿轮进入设置可以自由更改。包含暗黑模式，自定义效果，主题颜色等多种选项，也可以修改、自定义背景图像，还可以更改搜索引擎。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/mOTQcedRN2485YJ.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;搜索引擎可以按自己的需要更换&lt;/p&gt;
+&lt;h2 id=&#34;二-怎样设置青柠起始页为默认浏览器主页&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-怎样设置青柠起始页为默认浏览器主页&#34;&gt;#&lt;/a&gt; 二、怎样设置青柠起始页为默认浏览器主页&lt;/h2&gt;
+&lt;p&gt;1、打开谷歌浏览器，选中右上角图标&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/CBTmYgREzj65XtP.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;右上角图标&lt;/p&gt;
+&lt;p&gt;2、打开后点击设置&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/6OigtnE8zDXvQKm.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;3、在左侧边栏选中搜索引擎&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/mUrF9HhvgAe1x6l.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;4、选中特定网页或一组网页&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/biE6KLyjrV8zJmA.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;5、点击添加新网页，输入青柠起始页网址即可&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/921xZwtQcgNTLb4.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;6、重启浏览器即可&lt;/p&gt;
+&lt;h2 id=&#34;三-总结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三-总结&#34;&gt;#&lt;/a&gt; 三、总结&lt;/h2&gt;
+&lt;h2 id=&#34;1找到右上角的工具栏按钮并点击&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1找到右上角的工具栏按钮并点击&#34;&gt;#&lt;/a&gt; 【1】找到右上角的工具栏按钮并点击。&lt;/h2&gt;
+&lt;h2 id=&#34;2找到设置按钮并且打开设置页面&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2找到设置按钮并且打开设置页面&#34;&gt;#&lt;/a&gt; 【2】找到设置按钮，并且打开设置页面。&lt;/h2&gt;
+&lt;h2 id=&#34;3在启动时功能处设置默认打开页面&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3在启动时功能处设置默认打开页面&#34;&gt;#&lt;/a&gt; 【3】在启动时功能处设置默认打开页面。&lt;/h2&gt;
+&lt;h2 id=&#34;4设置即可无需点击确定重启浏览器即可&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4设置即可无需点击确定重启浏览器即可&#34;&gt;#&lt;/a&gt; 【4】设置即可，无需点击确定，重启浏览器即可。&lt;/h2&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

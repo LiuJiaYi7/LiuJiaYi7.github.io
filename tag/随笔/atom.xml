@@ -1,0 +1,1038 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://LiuJiaYi7.github.io</id>
+    <title>LiuJiaYi7&#39;s blog • Posts by &#34;随笔&#34; tag</title>
+    <link href="https://LiuJiaYi7.github.io" />
+    <updated>2022-03-05T08:20:44.000Z</updated>
+    <category term="随笔" />
+    <category term="笔记" />
+    <category term="习题" />
+    <category term="基本命令" />
+    <category term="记录" />
+    <category term="小结" />
+    <entry>
+        <id>https://liujiayi7.github.io/2022/03/05/SQLyog%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%B1%E8%B4%A5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</id>
+        <title>SQLyog连接数据库失败解决方法</title>
+        <link rel="alternate" href="https://liujiayi7.github.io/2022/03/05/SQLyog%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%B1%E8%B4%A5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+        <content type="html">&lt;h1 id=&#34;sqlyog连接mysql数据库时发生2003错误连接数据库失败&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#sqlyog连接mysql数据库时发生2003错误连接数据库失败&#34;&gt;#&lt;/a&gt; SQLyog 连接 MySql 数据库时发生 2003 错误，连接数据库失败&lt;/h1&gt;
+&lt;h2 id=&#34;一-错误情况&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-错误情况&#34;&gt;#&lt;/a&gt; 一、错误情况&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/.io//E:%5CE%5Cblog%5CLiuJiaYi7%5Csource_posts%5CSQLyog%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%B1%E8%B4%A5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%5CSQLyog%E9%94%99%E8%AF%AF%E6%83%85%E5%86%B5.png&#34; alt&gt;&lt;/p&gt;
+&lt;h2 id=&#34;二-错误原因&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-错误原因&#34;&gt;#&lt;/a&gt; 二、错误原因&lt;/h2&gt;
+&lt;p&gt;1・mysql 数据库未打开，或者自己手动关闭了 mysql 数据库。&lt;/p&gt;
+&lt;p&gt;2・关于 mysql 版本问题，服务名无效，启动失败。原因：在安装 MySql 时 Windows Service Name 为系统默认，未调整。&lt;/p&gt;
+&lt;h2 id=&#34;三-解决方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三-解决方法&#34;&gt;#&lt;/a&gt; 三、解决方法&lt;/h2&gt;
+&lt;p&gt;键盘按住 win +R，打开运行窗口，输入’services.msc’（不含单引号）字符串：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/.io//E:%5CE%5Cblog%5CLiuJiaYi7%5Csource_posts%5CSQLyog%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%B1%E8%B4%A5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%5C%E6%9F%A5%E7%9C%8B.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;打开后找到 MySQL&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/.io//E:%5CE%5Cblog%5CLiuJiaYi7%5Csource_posts%5CSQLyog%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%B1%E8%B4%A5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%5C%E6%9F%A5%E7%9C%8BMySQL%E7%89%88%E6%9C%AC%E5%8F%B7.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;双击查看属性，更改服务状态为启动即可（点击启动按钮）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/.io//E:%5CE%5Cblog%5CLiuJiaYi7%5Csource_posts%5CSQLyog%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%B1%E8%B4%A5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%5C%E6%9B%B4%E6%94%B9.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;之后再打开 SQLyog 连接数据库即可成功。&lt;/p&gt;
+</content>
+        <category term="随笔" />
+        <updated>2022-03-05T08:20:44.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://liujiayi7.github.io/2022/03/02/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F%E5%90%8E%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AEhexo%E5%8D%9A%E5%AE%A2/</id>
+        <title>重装系统后如何配置hexo博客</title>
+        <link rel="alternate" href="https://liujiayi7.github.io/2022/03/02/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F%E5%90%8E%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AEhexo%E5%8D%9A%E5%AE%A2/"/>
+        <content type="html">&lt;h1 id=&#34;重装系统后如何配置hexo博客&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#重装系统后如何配置hexo博客&#34;&gt;#&lt;/a&gt; 重装系统后如何配置 hexo 博客&lt;/h1&gt;
+&lt;p&gt;暑假期间重装了系统，考虑到 hexo 博客需要在新系统安装配置，重装之前在网上查找学习了相关教程，在这里记录一下。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;提示：如需重装系统配置 hexo，请一定要先做好备份保存再尝试。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;重要的准备工作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#重要的准备工作&#34;&gt;#&lt;/a&gt; 重要的准备工作&lt;/h3&gt;
+&lt;p&gt;首先，&lt;strong&gt;最重要的一点：在重装系统之前，备份保存&lt;/strong&gt; 硬盘里 hexo 博客文件夹（就是 hexo 博客存储的文件夹。） 因为不知道哪些文件需要用，所以我把整个文件夹都保存下来。&lt;/p&gt;
+&lt;h3 id=&#34;重装系统之后&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#重装系统之后&#34;&gt;#&lt;/a&gt; 重装系统之后&lt;/h3&gt;
+&lt;h3 id=&#34;1安装软件-git-和-nodejs&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1安装软件-git-和-nodejs&#34;&gt;#&lt;/a&gt; 1. 安装软件 git 和 Node.js&lt;/h3&gt;
+&lt;p&gt;git 下载地址：git 官网 Node.js 下载地址：Node.js 官网&lt;/p&gt;
+&lt;h3 id=&#34;2配置ssh-key&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2配置ssh-key&#34;&gt;#&lt;/a&gt; 2. 配置 SSH Key&lt;/h3&gt;
+&lt;p&gt;在 Git Bash 客户端，输入：&lt;/p&gt;
+&lt;figure class=&#34;highlight stylus&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git config &lt;span class=&#34;attr&#34;&gt;--global&lt;/span&gt; user&lt;span class=&#34;selector-class&#34;&gt;.name&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;这里输入在GitHub的账户名&amp;quot;&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config &lt;span class=&#34;attr&#34;&gt;--global&lt;/span&gt; user&lt;span class=&#34;selector-class&#34;&gt;.email&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;这里输入在GitHub的注册邮箱名&amp;quot;&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ssh-keygen -t rsa -C &lt;span class=&#34;string&#34;&gt;&amp;quot;这里输入在 GitHub 的注册邮箱&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;接着在 Git Bash 客户端，输入命令行：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cat&lt;/span&gt; id_ras.pub&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这样会显示公钥文件内容，把它复制到剪贴板。&lt;/p&gt;
+&lt;p&gt;登录 GitHub 账户，点击右上角个人头像的下拉菜单，依次点击 Settings &amp;gt; SSH and GPG Keys，在 SSH Keys 页面右上角有个 &lt;code&gt;New SSH Key&lt;/code&gt;  按钮，点击该按钮后，粘贴上刚才复制的公钥内容。这样，SSH Key 就配置好了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;思考&lt;/strong&gt;：我当时按照这个配置的，但是忘记看一下重装之前的 SSH Key 是不是还在，是否有必要重新配置，下次重装时要看一下。&lt;/p&gt;
+&lt;h3 id=&#34;3安装hexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3安装hexo&#34;&gt;#&lt;/a&gt; 3. 安装 hexo&lt;/h3&gt;
+&lt;p&gt;在 Git Bash 客户端输入:  &lt;code&gt;npm install hexo-cli -g&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;4删除hexo博客文件夹里的部分文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4删除hexo博客文件夹里的部分文件&#34;&gt;#&lt;/a&gt; 4. 删除 hexo 博客文件夹里的部分文件&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;提示：为防止误操作，稳妥起见，执行本操作之前，还是在另外一个盘再存储一份 hexo 博客文件夹保存为好。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;保留_config.yml, themes/, source/, scaffolds/, package.json, .gitignore 这些文件 / 文件夹，&lt;/strong&gt; 其它可以删除。&lt;/p&gt;
+&lt;h3 id=&#34;5安装文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5安装文件&#34;&gt;#&lt;/a&gt; 5. 安装文件&lt;/h3&gt;
+&lt;p&gt;在 Git Bash 客户端输入&lt;/p&gt;
+&lt;figure class=&#34;highlight cmake&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm &lt;span class=&#34;keyword&#34;&gt;install&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;6安装部署&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6安装部署&#34;&gt;#&lt;/a&gt; 6. 安装部署&lt;/h3&gt;
+&lt;p&gt;在 Git Bash 客户端输入：&lt;/p&gt;
+&lt;figure class=&#34;highlight ada&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-deployer-git &lt;span class=&#34;comment&#34;&gt;--save&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;7运行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7运行&#34;&gt;#&lt;/a&gt; 7. 运行&lt;/h3&gt;
+&lt;p&gt;最后，在博客文件夹上，运行 Git Bash 客户端，依次输入以下命令：&lt;/p&gt;
+&lt;figure class=&#34;highlight ebnf&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;hexo clean&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;hexo g&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;hexo d&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;然后查看是否配置成功。&lt;/p&gt;
+</content>
+        <category term="随笔" />
+        <updated>2022-03-02T13:15:54.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://liujiayi7.github.io/2022/02/27/jdk%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/</id>
+        <title>jdk环境变量配置</title>
+        <link rel="alternate" href="https://liujiayi7.github.io/2022/02/27/jdk%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/"/>
+        <content type="html">&lt;h1 id=&#34;jdk环境变量配置centos7&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#jdk环境变量配置centos7&#34;&gt;#&lt;/a&gt; JDK 环境变量配置（CentOS7）&lt;/h1&gt;
+&lt;p&gt;将我们所需要的压缩包放在共享文件夹 share_file 中，此时该文件夹会出现在虚拟机根目录下 /mnt/hgfs/ 下&lt;/p&gt;
+&lt;h2 id=&#34;一-将共享文件夹中的压缩包移动到新的路径下便于寻找&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-将共享文件夹中的压缩包移动到新的路径下便于寻找&#34;&gt;#&lt;/a&gt; 一、将共享文件夹中的压缩包移动到新的路径下（便于寻找）&lt;/h2&gt;
+&lt;figure class=&#34;highlight awk&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;、打开终端（右键open terminal）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;、在desktop文件夹下新建tools文件夹用于存放压缩包&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mkdir &lt;span class=&#34;regexp&#34;&gt;/desktop/&lt;/span&gt;tools&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;.切换为root用户&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;.移动压缩包位置并解压缩&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cp &lt;span class=&#34;regexp&#34;&gt;/mnt/&lt;/span&gt;hgfs&lt;span class=&#34;regexp&#34;&gt;/共享文件夹名/&lt;/span&gt;需要复制的文件名  &lt;span class=&#34;regexp&#34;&gt;/home/&lt;/span&gt;最初的用户名(自己设置的）&lt;span class=&#34;regexp&#34;&gt;/Desktop/&lt;/span&gt;tools/       &lt;span class=&#34;comment&#34;&gt;#cp命令将压缩包中的内容复制到tools文件夹中&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mkdir &lt;span class=&#34;regexp&#34;&gt;/usr/&lt;/span&gt;local/java        &lt;span class=&#34;comment&#34;&gt;#新建文件夹&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar -zxvf &lt;span class=&#34;regexp&#34;&gt;/home/&lt;/span&gt;zrh&lt;span class=&#34;regexp&#34;&gt;/Desktop/&lt;/span&gt;tools&lt;span class=&#34;regexp&#34;&gt;/jdk-8u281-linux-x64.tar.gz -C /u&lt;/span&gt;sr&lt;span class=&#34;regexp&#34;&gt;/local/&lt;/span&gt;java/     &lt;span class=&#34;comment&#34;&gt;#解压缩&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;rpm -qa|grep jdk    &lt;span class=&#34;comment&#34;&gt;#查看目前是否有openjdk（系统自带的）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;若出现&lt;/p&gt;
+&lt;figure class=&#34;highlight apache&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;copy&lt;/span&gt;-jdk-config-&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;.&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;、、、&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;java&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;.&lt;span class=&#34;number&#34;&gt;8&lt;/span&gt;.&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;-openjdk-headless、、、、&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;java&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;.&lt;span class=&#34;number&#34;&gt;8&lt;/span&gt;.&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;-openjdk-、、、、&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;java&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;.&lt;span class=&#34;number&#34;&gt;8&lt;/span&gt;.&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;-openjdk-headless-&lt;span class=&#34;number&#34;&gt;1.8.0.131&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;11&lt;/span&gt;.b12.el7.x86_64&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;copy&lt;/span&gt;-jdk-configs-&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;.&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;.el7.noarch&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;java&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;.&lt;span class=&#34;number&#34;&gt;7&lt;/span&gt;.&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;-openjdk-headless-&lt;span class=&#34;number&#34;&gt;1.7.0.141&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;2.6.10.5&lt;/span&gt;.el7.x86_64&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;java&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;.&lt;span class=&#34;number&#34;&gt;8&lt;/span&gt;.&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;-openjdk-&lt;span class=&#34;number&#34;&gt;1.8.0.131&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;11&lt;/span&gt;.b12.el7.x86_64&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;则说明含有 openjdk，需要删除&lt;/p&gt;
+&lt;p&gt;法一：将其中以 c 开头的删掉’yum -y remove c***’&lt;/p&gt;
+&lt;p&gt;法二：rpm -e --nadeps 包名&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/LiuJiaYi7/JiaYiJiaYi/img/1.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;之后再使用 rpm -qa|grep jdk 命令或者 java -version 命令，检查一下是否卸载完成&lt;/p&gt;
+&lt;h2 id=&#34;二-配置环境变量&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-配置环境变量&#34;&gt;#&lt;/a&gt; 二、配置环境变量&lt;/h2&gt;
+&lt;figure class=&#34;highlight awk&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;vim &lt;span class=&#34;regexp&#34;&gt;/etc/&lt;/span&gt;profile  &lt;span class=&#34;comment&#34;&gt;#打开编辑器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;o  &lt;span class=&#34;comment&#34;&gt;#启动编辑&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在文件末尾添加&lt;/p&gt;
+&lt;figure class=&#34;highlight routeros&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;JAVA_HOME&lt;/span&gt;=/usr/local/java/jdk1.8.0_281&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;CLASSPATH&lt;/span&gt;=&lt;span class=&#34;variable&#34;&gt;$JAVA_HOME&lt;/span&gt;/lib/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;PATH&lt;/span&gt;=&lt;span class=&#34;variable&#34;&gt;$PATH&lt;/span&gt;:$JAVA_HOME/bin&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; PATH JAVA_HOME CLASSPATH&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;添加完成后，保存并推出&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;:wq&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;刷新环境变量并测试&lt;/p&gt;
+&lt;figure class=&#34;highlight awk&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;source &lt;span class=&#34;regexp&#34;&gt;/etc/&lt;/span&gt;profile    &lt;span class=&#34;comment&#34;&gt;#刷新环境变量&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;java -version   &lt;span class=&#34;comment&#34;&gt;#测试环境变量是否安装完成&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+        <category term="随笔" />
+        <updated>2022-02-27T06:49:27.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://liujiayi7.github.io/2021/11/01/CentOS7%E5%AE%89%E8%A3%85zookeeper/</id>
+        <title>CentOS7安装zookeeper</title>
+        <link rel="alternate" href="https://liujiayi7.github.io/2021/11/01/CentOS7%E5%AE%89%E8%A3%85zookeeper/"/>
+        <content type="html">&lt;h1 id=&#34;centos7安装zookeeper&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#centos7安装zookeeper&#34;&gt;#&lt;/a&gt; CentOS7 安装 zookeeper&lt;/h1&gt;
+&lt;p&gt;环境：CentOS7、jdk1.8.0-281、hadoop-3.2.2&lt;/p&gt;
+&lt;p&gt;zookeeper 版本：3.6.3&lt;/p&gt;
+&lt;hr&gt;
+&lt;figure class=&#34;highlight awk&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 解压apache-zookeeper-3.6.3-bin.tar.gz  注意：一定要先找好被解压文件的位置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar -zxvf &lt;span class=&#34;regexp&#34;&gt;/home/&lt;/span&gt;xxx&lt;span class=&#34;regexp&#34;&gt;/xxx/&lt;/span&gt;xxx&lt;span class=&#34;regexp&#34;&gt;/apache-zookeeper-3.6.3-bin.tar.gz -C /u&lt;/span&gt;sr/local&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 进入/usr/local，改一下文件夹名字，方便后续操作&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cd &lt;span class=&#34;regexp&#34;&gt;/usr/&lt;/span&gt;local/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mv apache-zookeeper-&lt;span class=&#34;number&#34;&gt;3.6&lt;/span&gt;.&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;-bin/ zookeeper&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 创建用来存放数据的文件夹&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mkdir -p &lt;span class=&#34;regexp&#34;&gt;/usr/&lt;/span&gt;local&lt;span class=&#34;regexp&#34;&gt;/zookeeper/&lt;/span&gt;data&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 创建用来存放日志的文件夹&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mkdir -p &lt;span class=&#34;regexp&#34;&gt;/usr/&lt;/span&gt;local&lt;span class=&#34;regexp&#34;&gt;/zookeeper/&lt;/span&gt;logs&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# zookeeper默认启动配置文件名字为zoo.cfg，所以将样例配置文件复制一下，原文件做备份&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cp &lt;span class=&#34;regexp&#34;&gt;/usr/&lt;/span&gt;local&lt;span class=&#34;regexp&#34;&gt;/zookeeper/&lt;/span&gt;conf&lt;span class=&#34;regexp&#34;&gt;/zoo_sample.cfg /u&lt;/span&gt;sr&lt;span class=&#34;regexp&#34;&gt;/local/&lt;/span&gt;zookeeper&lt;span class=&#34;regexp&#34;&gt;/conf/&lt;/span&gt;zoo.cfg&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;修改 zoo.cfg 文件，找到下面内容：&lt;/p&gt;
+&lt;figure class=&#34;highlight awk&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;cd &lt;span class=&#34;regexp&#34;&gt;/usr/&lt;/span&gt;local&lt;span class=&#34;regexp&#34;&gt;/zookeeper/&lt;/span&gt;conf/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;vim zoo.cfg&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;dataDir=&lt;span class=&#34;regexp&#34;&gt;/tmp/&lt;/span&gt;zookeeper&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;修改文件配置，改为下面内容：&lt;/p&gt;
+&lt;figure class=&#34;highlight ini&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;dataDir&lt;/span&gt;=/usr/local/zookeeper/data&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;dataLogDir&lt;/span&gt;=/usr/local/zookeeper/logs&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;server.1&lt;/span&gt;=master:&lt;span class=&#34;number&#34;&gt;2890&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;3890&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;server.2&lt;/span&gt;=slave1:&lt;span class=&#34;number&#34;&gt;2890&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;3890&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;server.3&lt;/span&gt;=slave2:&lt;span class=&#34;number&#34;&gt;2890&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;3890&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这里设置的是三台虚拟机，设置的第一台为主机，而另外两台为备用机，在 /usr/local/zookeeper/data/ 下，建立一个 myid 文件来区分主机和备用机：&lt;/p&gt;
+&lt;figure class=&#34;highlight awk&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;vim &lt;span class=&#34;regexp&#34;&gt;/usr/&lt;/span&gt;local&lt;span class=&#34;regexp&#34;&gt;/zookeeper/&lt;/span&gt;data/myid&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在主机 1 中写入 1，备用机 02、03 中分别写入 2、3&lt;/p&gt;
+&lt;p&gt;配置环境变量：&lt;/p&gt;
+&lt;figure class=&#34;highlight awk&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;vim &lt;span class=&#34;regexp&#34;&gt;/etc/&lt;/span&gt;profile&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在文件最下端写入：&lt;/p&gt;
+&lt;figure class=&#34;highlight routeros&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;attribute&#34;&gt;ZOOKEEPER_HOME&lt;/span&gt;=/home/program/zookeeper&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;PATH&lt;/span&gt;=&lt;span class=&#34;variable&#34;&gt;$PATH&lt;/span&gt;:$ZOOKEEPER_HOME/bin&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;接下来刷新环境变量：&lt;/p&gt;
+&lt;figure class=&#34;highlight awk&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;source &lt;span class=&#34;regexp&#34;&gt;/etc/&lt;/span&gt;profile&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 启动zookeeper&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;zkServer.sh start&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 检查进程（正常有一个进程QuorumPeerMain&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;jps&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 检查状态（正常状态应该是一台是leader，另两台是follower）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;zkServer.sh status&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 关闭zookeeper&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;zkServer.sh stop&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;注意事项：日志中报错信息为拒绝连接，在 zoo.cfg 文件中，master、slave1、slave2 不可以使用 localhost 或者 127.0.0.1，同时在 /etc/hosts 中，不可以使用 127.0.0.1 来映射 master 等。&lt;/p&gt;
+</content>
+        <category term="随笔" />
+        <updated>2021-11-01T07:46:29.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://liujiayi7.github.io/2021/08/22/HTML%E5%9F%BA%E7%A1%80/</id>
+        <title>HTML基础</title>
+        <link rel="alternate" href="https://liujiayi7.github.io/2021/08/22/HTML%E5%9F%BA%E7%A1%80/"/>
+        <content type="html">&lt;h2 id=&#34;1相关概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1相关概念&#34;&gt;#&lt;/a&gt; 1. 相关概念&lt;/h2&gt;
+&lt;h3 id=&#34;11什么是网页&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11什么是网页&#34;&gt;#&lt;/a&gt; 1.1 什么是网页&lt;/h3&gt;
+&lt;p&gt;网站是指在因特网上根据一定的规则，使用 HTML 等制作的用于展示特定内容的网页集合。&lt;/p&gt;
+&lt;p&gt;网页是网站中的一 “页”，通常是 HTML 格式的文件，它通过浏览器来阅读。&lt;/p&gt;
+&lt;p&gt;网页是构成网站的基本元素，它通常由图片、链接、文字、声音、视频等元素构成。通常我们看到的网页，常见以.htm 或.html 后缀结尾的文件，因此将其俗称为 HTML 文件。&lt;/p&gt;
+&lt;h3 id=&#34;12什么是html&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#12什么是html&#34;&gt;#&lt;/a&gt; 1.2 什么是 HTML&lt;/h3&gt;
+&lt;p&gt;HTML 是一种超文本标记语言 (Hyper Text Markup Language)，它是用来描述网页的一种语言。&lt;/p&gt;
+&lt;p&gt;HTML&lt;strong&gt; 不是&lt;/strong&gt;一种编程语言，而是一种标记语言 (markup language)。&lt;/p&gt;
+&lt;p&gt;标记语言是一套标记标签 (markup tag)。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;超文本的两层含义：&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;（1）它可以加入图片、声音、动画、多媒体等内容（超越了文本限制）。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;（2）它还可以从一个文件跳转到另一个文件，与世界各地主机的文件连接（超级链接文本）。&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;13-web标准的构成&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#13-web标准的构成&#34;&gt;#&lt;/a&gt; 1.3 Web 标准的构成&lt;/h3&gt;
+&lt;p&gt;主要包括&lt;strong&gt;结构&lt;/strong&gt;（Structure）、&lt;strong&gt;表现&lt;/strong&gt;（Presentation）和&lt;strong&gt;行为&lt;/strong&gt;（Behavior）三个方面。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;标准&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;结构&lt;/td&gt;
+&lt;td&gt;结构用于对网页元素进行整理和分类，现阶段主要学的是 HTML&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;表现&lt;/td&gt;
+&lt;td&gt;表现用于设置网页元素的版式、颜色、大小等外观样式，主要指的是 CSS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;行为&lt;/td&gt;
+&lt;td&gt;行为是指网页模型的定义及交互的编写，现阶段主要学的是 Javascript&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Web 标准提出的最佳体验方案：结构、样式、行为相分离。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;简单理解：结构写到 HTML 文件中，表现写到 CSS 文件中，行为写到 JavaScript 文件中。&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-html-语法规范&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-html-语法规范&#34;&gt;#&lt;/a&gt; 2. HTML 语法规范&lt;/h2&gt;
+&lt;h3 id=&#34;21基本语法概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#21基本语法概念&#34;&gt;#&lt;/a&gt; 2.1 基本语法概念&lt;/h3&gt;
+&lt;p&gt;HTML 标签是由尖括号包围的关键字，例如 &lt;html&gt;&lt;/html&gt;&lt;/p&gt;
+&lt;p&gt;HTML 标签通常是成对出现的，例如 &lt;html&gt; 和 &lt;/html&gt;，我们称为双标签。标签对中的第一个标签是开始标签，第二个标签是结束标签。&lt;/p&gt;
+&lt;p&gt;有些特殊的标签必须是单个标签（极少情况），称为单标签，例如&lt;/p&gt;
+&lt;h3 id=&#34;22标签关系&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#22标签关系&#34;&gt;#&lt;/a&gt; 2.2 标签关系&lt;/h3&gt;
+&lt;p&gt;标签关系可以分为两类：&lt;strong&gt;包含关系&lt;/strong&gt;和&lt;strong&gt;并列关系&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;包含关系&lt;head&gt; &lt;title&gt; &lt;/title&gt; &lt;/head&gt;&lt;/p&gt;
+&lt;p&gt;并列关系&lt;head&gt; &lt;/head&gt;&lt;/p&gt;
+&lt;body&gt;&lt;/body&gt;
+&lt;h3 id=&#34;23第一个html网页骨架标签&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#23第一个html网页骨架标签&#34;&gt;#&lt;/a&gt; 2.3 第一个 HTML 网页（骨架标签）&lt;/h3&gt;
+&lt;p&gt;每一个网页都会有一个基本的结构标签（骨架标签），页面内容也是在这些基本标签上书写的。HTML 页面也成为 HTML 文档。&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;这是我的第一个页面&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        我叫***&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;标签名&lt;/th&gt;
+&lt;th&gt;定义&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;html&gt;&lt;/html&gt;&lt;/td&gt;
+&lt;td&gt;HTML 标签&lt;/td&gt;
+&lt;td&gt;页面中最大的标签，我们称为根标签&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;head&gt;&lt;/head&gt;&lt;/td&gt;
+&lt;td&gt;文档的头部&lt;/td&gt;
+&lt;td&gt;注意在 head 标签中我们必须要设置的标签是 title&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;title&gt;&lt;/title&gt;&lt;/td&gt;
+&lt;td&gt;文档的标题&lt;/td&gt;
+&lt;td&gt;让页面拥有一个属于自己的网页标签&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;body&gt;&lt;/body&gt;&lt;/td&gt;
+&lt;td&gt;文档的主体&lt;/td&gt;
+&lt;td&gt;元素包含文档的所有内容，页面内容基本都是放到 body 里面的&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h3 id=&#34;24自动生成的三行代码的作用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#24自动生成的三行代码的作用&#34;&gt;#&lt;/a&gt; 2.4 自动生成的三行代码的作用&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;代码&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;!DOCTYPE html&gt;&lt;/td&gt;
+&lt;td&gt;文档类型声明标签，告诉浏览器这个页面采用 html5 版本来显示页面&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;html lang=&#34;en&#34;&gt;&lt;/html&gt;&lt;/td&gt;
+&lt;td&gt;告诉浏览器或者搜素引擎这是一个英文网站，本页面采用英文来显示&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;meta charset=&#34;UTF-8&#34;&gt;&lt;/td&gt;
+&lt;td&gt;必须写采取 UTF-8 来保存文字，如果不写就会乱码&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-visual-studio-code工具&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-visual-studio-code工具&#34;&gt;#&lt;/a&gt; 3. Visual Studio Code 工具&lt;/h2&gt;
+&lt;h3 id=&#34;31-vs-code中推荐安装的插件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#31-vs-code中推荐安装的插件&#34;&gt;#&lt;/a&gt; 3.1 VS Code 中推荐安装的插件&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;插件&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Chinese (Simplified) Language Pack for VS Code&lt;/td&gt;
+&lt;td&gt;中文（简体）语言包&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Open in Browser&lt;/td&gt;
+&lt;td&gt;右击选择浏览器打开 html 文件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Js-CSS-HTML Formatter&lt;/td&gt;
+&lt;td&gt;每次保存，都会自动格式化 js css 和 html 代码&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Auto Rename Tag&lt;/td&gt;
+&lt;td&gt;自动重命名配对的 HTML/XML 标签&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CSS Peek&lt;/td&gt;
+&lt;td&gt;追踪至样式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h3 id=&#34;32插件安装过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#32插件安装过程&#34;&gt;#&lt;/a&gt; 3.2 插件安装过程&lt;/h3&gt;
+&lt;p&gt;先点击左下角的 Extensions，然后在搜索栏中输入要使用的插件（注：输入所需插件的前几个字母即可），点击安装，安装第一个中文语言插件后，一定要重启软件，其它几个可以不重启。&lt;/p&gt;
+&lt;h3 id=&#34;33-vs-code的使用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#33-vs-code的使用&#34;&gt;#&lt;/a&gt; 3.3 VS Code 的使用&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;新建文件 （Ctrl + N）。&lt;/li&gt;
+&lt;li&gt;保存（Ctrl + s），注意一定要保存为以 .html 结尾的文件。&lt;/li&gt;
+&lt;li&gt;Ctrl + 加号键，Ctrl + 减号键，可以放大缩小视图。&lt;/li&gt;
+&lt;li&gt;生成页面骨架结构：输入！按下 Tab 键。&lt;/li&gt;
+&lt;li&gt;利用插件在浏览器中预览页面：单击鼠标右键，在弹出窗口中点击 &amp;quot;Open In Default Browser&amp;quot;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;4常用标签&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4常用标签&#34;&gt;#&lt;/a&gt; 4. 常用标签&lt;/h2&gt;
+&lt;h3 id=&#34;41注释标签和特殊字符&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#41注释标签和特殊字符&#34;&gt;#&lt;/a&gt; 4.1 注释标签和特殊字符&lt;/h3&gt;
+&lt;h4 id=&#34;411注释标签&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#411注释标签&#34;&gt;#&lt;/a&gt; 4.1.1 注释标签&lt;/h4&gt;
+&lt;figure class=&#34;highlight xml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&amp;lt;!--注释语句--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;412特殊字符三个常用的&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#412特殊字符三个常用的&#34;&gt;#&lt;/a&gt; 4.1.2 特殊字符（三个常用的）&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;特殊字符&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;th&gt;字符的代码&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;空格符&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;lt;&lt;/td&gt;
+&lt;td&gt;小于号&lt;/td&gt;
+&lt;td&gt;&amp;amp;lt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;gt;&lt;/td&gt;
+&lt;td&gt;大于号&lt;/td&gt;
+&lt;td&gt;&amp;amp;gt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h3 id=&#34;42标题标签-段落标签和换行标签&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#42标题标签-段落标签和换行标签&#34;&gt;#&lt;/a&gt; 4.2 标题标签、段落标签和换行标签&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;语义&lt;/th&gt;
+&lt;th&gt;标签&lt;/th&gt;
+&lt;th&gt;说明（特点）&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;标题标签&lt;/td&gt;
+&lt;td&gt;&lt;h1&gt; &lt;/h1&gt;–&lt;h6&gt; &lt;/h6&gt;&lt;/td&gt;
+&lt;td&gt;（1）共有 6 级标题，加了标题的文字会加粗，字号也会变大；（2）一个标题独占一行。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;段落标签&lt;/td&gt;
+&lt;td&gt;&lt;p&gt; &lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;（1）文本在一个段落中会根据浏览器窗口的大小自动换行；（2）段落和段落之间保有空隙。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;换行标签（单标签）&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;（1）在 HTML 中，一个段落中的文字会从左到右依次排列，直到浏览器窗口的右端，然后才自动换行，换行标签会使某段文本强制换行显示。（2）该标签只是简单地开始新的一行，跟段落不一样，段落之间会插入一些垂直的间距。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h3 id=&#34;43文本格式化标签&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#43文本格式化标签&#34;&gt;#&lt;/a&gt; 4.3 文本格式化标签&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;语义&lt;/th&gt;
+&lt;th&gt;标签&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;加粗&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;/strong&gt;或者&lt;b&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;倾斜&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;&lt;/em&gt;或者&lt;i&gt;&lt;/i&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;删除线&lt;/td&gt;
+&lt;td&gt;&lt;del&gt;&lt;/del&gt;或者&lt;s&gt;&lt;/s&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;下划线&lt;/td&gt;
+&lt;td&gt;&lt;ins&gt;&lt;/ins&gt;或者&lt;u&gt;&lt;/u&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h3 id=&#34;44div和span标签&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#44div和span标签&#34;&gt;#&lt;/a&gt; 4.4 &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;  和 &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;  标签&lt;/h3&gt;
+&lt;p&gt;它们是没有语义的，就是一个盒子，用来装内容的。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;标签&lt;/th&gt;
+&lt;th&gt;特点&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;用来布局，一行只能放一个 &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; 。大盒子&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;span&amp;gt;&amp;lt;/span&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;用来布局，一行可以放多个 &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; 。小盒子&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h3 id=&#34;45图像标签及路径&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#45图像标签及路径&#34;&gt;#&lt;/a&gt; 4.5 图像标签及路径&lt;/h3&gt;
+&lt;h4 id=&#34;451图像标签&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#451图像标签&#34;&gt;#&lt;/a&gt; 4.5.1 图像标签&lt;/h4&gt;
+&lt;figure class=&#34;highlight stylus&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;&lt;span class=&#34;selector-tag&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;attribute&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;C:C:\Users\Public\img.jpg&amp;quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;&lt;span class=&#34;selector-tag&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;attribute&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;http://www.itcast.cn/2018czgw/images/.png&amp;quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;属性&lt;/th&gt;
+&lt;th&gt;属性值&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;src&lt;/td&gt;
+&lt;td&gt;图片路径&lt;/td&gt;
+&lt;td&gt;必须属性&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;alt&lt;/td&gt;
+&lt;td&gt;文本&lt;/td&gt;
+&lt;td&gt;替换文本。图像不能显示的文字&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;title&lt;/td&gt;
+&lt;td&gt;文本&lt;/td&gt;
+&lt;td&gt;提示文本。鼠标放到图像上，显示文字&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;width&lt;/td&gt;
+&lt;td&gt;像素&lt;/td&gt;
+&lt;td&gt;设置图像的宽度&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;height&lt;/td&gt;
+&lt;td&gt;像素&lt;/td&gt;
+&lt;td&gt;设置图像的高度&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;border&lt;/td&gt;
+&lt;td&gt;像素&lt;/td&gt;
+&lt;td&gt;设置图像的边框粗细&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;注：&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;（1）图像标签可以拥有多个属性，必须写在标签名的后面。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;（2）属性之间不分先后顺序，标签名与属性、属性与属性之间均以空格分开。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;（3）属性采用键值对的格式，即 key = &amp;quot;value&amp;quot; 的格式，属性 = “属性值”。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;（4）src 属性必须写。&lt;/em&gt;&lt;/p&gt;
+&lt;h4 id=&#34;452路径&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#452路径&#34;&gt;#&lt;/a&gt; 4.5.2 路径&lt;/h4&gt;
+&lt;p&gt;路径分为相对路径和绝对路径。&lt;/p&gt;
+&lt;p&gt;相对路径：从代码所在的文件出发，去寻找目标文件而得到的路径。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;相对路径分类&lt;/th&gt;
+&lt;th&gt;符号&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;同一级路径&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;图像文件位于 HTML 文件同一级，如&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;下一级路径&lt;/td&gt;
+&lt;td&gt;/&lt;/td&gt;
+&lt;td&gt;图像文件位于 HTML 文件同一级，如&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;上一级路径&lt;/td&gt;
+&lt;td&gt;…/&lt;/td&gt;
+&lt;td&gt;图像文件位于 HTML 文件同一级，如&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;绝对路径：指目录下的绝对位置，直接到大目标位置，通常是从盘符开始的路径。&lt;/p&gt;
+&lt;p&gt;例如：“D:\web\img\logo.gif&amp;quot;或者完整的网络地址&amp;quot;&lt;a href=&#34;http://www.itcast.cn/images/logo.gif&#34;&gt;http://www.itcast.cn/images/logo.gif&lt;/a&gt;”。&lt;/p&gt;
+&lt;h3 id=&#34;46超链接标签&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#46超链接标签&#34;&gt;#&lt;/a&gt; 4.6 超链接标签&lt;/h3&gt;
+&lt;p&gt;语法格式&lt;/p&gt;
+&lt;figure class=&#34;highlight routeros&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;a &lt;span class=&#34;attribute&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;跳转目标&amp;quot;&lt;/span&gt; &lt;span class=&#34;attribute&#34;&gt;target&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;目标窗口的弹出方式&amp;quot;&lt;/span&gt;&amp;gt;文本或图像&amp;lt;/a&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;属性&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;href&lt;/td&gt;
+&lt;td&gt;用于指定连接目标的 url 地址（必须属性）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;target&lt;/td&gt;
+&lt;td&gt;用于指定链接页面的打开方式，其中 * self 为默认值，*blank 为在新窗口中打开&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;链接分类&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;链接分类&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;外部链接&lt;/td&gt;
+&lt;td&gt;如：&lt;a href=&#34;http://www.baidu.com/&#34;&gt;百度&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;内部链接&lt;/td&gt;
+&lt;td&gt;网站内部页面之间的相互链接&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;空链接&lt;/td&gt;
+&lt;td&gt;如果当时没有确定链接目标时，&lt;a href=&#34;http://47.97.197.252:8010/wp-admin/post.php?post=72&amp;amp;action=edit#&#34;&gt;首页&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;下载链接&lt;/td&gt;
+&lt;td&gt;如果 href 里面地址是一个文件或者压缩包，会下载这个文件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;网页元素链接&lt;/td&gt;
+&lt;td&gt;在网页中的各种网页元素，如文本、图像、表格、音频、视频等都可以添加超链接&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;锚点链接&lt;/td&gt;
+&lt;td&gt;点击链接可以快速定位到页面中的某个位置。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;注：锚点链接的语法格式&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;（1）在链接文本的 href 属性值，设置属性值为 #名字的格式，如: &lt;code&gt;&amp;lt;a href=&amp;quot;#live&amp;quot;&amp;gt;生活&amp;lt;/a&amp;gt;&lt;/code&gt;  ；&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;（2）找到目标位置标签，在里面添加一个 id 属性 = 刚才的名字，如： &lt;code&gt;&amp;lt;h4 id=&amp;quot;live&amp;quot;&amp;gt;生活&amp;lt;/h4&amp;gt;&lt;/code&gt; 。&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;5标签示例&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5标签示例&#34;&gt;#&lt;/a&gt; 5. 标签示例&lt;/h2&gt;
+&lt;p&gt;5.1 列表标签：&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&amp;lt;!--无序列表小圆点表示：应用范围：导航、侧边栏等--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;java&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;c++&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;python&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;go&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;hr&lt;/span&gt;&amp;gt;&lt;/span&gt;：换行标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&amp;lt;!--有序列表：应用范围：试卷、问答等--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;ol&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;java&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;c++&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;python&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;go&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;ol&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&amp;lt;!--自定义列表--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;﻿&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;5.2. 图像标签&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&amp;lt;!--image标签&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;src：图片地址（必填)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;相对路径  绝对路径&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;../  表示上一级目录&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;一般不建议使用绝对路径&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;title；悬停文字&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;alt  图片名字（必填）--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;../resources/image/1.jpg&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;alt&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;标签图片&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;title&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;悬停文字&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;width&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;287&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;height&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;637&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;链接标签.html#&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;down&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;5.3. 基本标签&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&amp;lt;!--标题标签--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;一级标签&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h2&lt;/span&gt;&amp;gt;&lt;/span&gt;二级标签&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h2&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h3&lt;/span&gt;&amp;gt;&lt;/span&gt;三级标签&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h3&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h4&lt;/span&gt;&amp;gt;&lt;/span&gt;四级标签&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h4&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h5&lt;/span&gt;&amp;gt;&lt;/span&gt;五级标签&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h5&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h6&lt;/span&gt;&amp;gt;&lt;/span&gt;六级标签&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h6&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h7&lt;/span&gt;&amp;gt;&lt;/span&gt;七级标签&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h7&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&amp;lt;!--水平线标签--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;hr&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&amp;lt;!--段落标签--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;两只老虎      两只老虎    跑的快&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;两只老虎      两只老虎    跑的快&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;两只老虎      两只老虎    跑的快&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&amp;lt;!--换行标签--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;两只老虎      两只老虎    跑的快&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;br&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;两只老虎      两只老虎    跑的快&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;br&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;两只老虎      两只老虎    跑的快&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;br&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&amp;lt;!--粗体，斜体--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;字体样式标签&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;粗体：&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;strong&lt;/span&gt;&amp;gt;&lt;/span&gt;我爱你啊！&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;strong&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;斜体：&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;em&lt;/span&gt;&amp;gt;&lt;/span&gt;我爱你啊！&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;em&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;br&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&amp;lt;!--特殊符号--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;symbol&#34;&gt;&amp;amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;br&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;symbol&#34;&gt;&amp;amp;lt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;br&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;symbol&#34;&gt;&amp;amp;copy;&lt;/span&gt;小七版权所有&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;br&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;空&lt;span class=&#34;symbol&#34;&gt;&amp;amp;nbsp;&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;&amp;amp;nbsp;&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;&amp;amp;nbsp;&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;&amp;amp;nbsp;&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;&amp;amp;nbsp;&lt;/span&gt;格&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;﻿&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;5.4. 链接标签&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;60&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&amp;lt;!--a标签学习(a按tab健补全)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;href  链接路径（必填，表示要跳转到哪个窗口）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;target  链接的目标窗口（在哪打开）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;_blank   在新的标签页中打开&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;_self    在自己的网页中打开&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;常用值  -self -blank&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;链接分为：超文本链接和图像链接&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;ctrl+d复制粘贴到下一行&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&amp;lt;!---使用name来标记--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;top&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;顶部&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;我的第一个个人网页.html&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;target&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;_blank&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;点击我跳转到我的第一个个人网页&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;https://www.baidu.com&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;target&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;_self&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;点击我跳转到百度&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;br&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;我的第一个个人网页.html&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;target&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;_blank&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;../resources/image/1.jpg&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;alt&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;标签图片&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;title&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;悬停文字&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;width&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;287&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;height&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;637&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;我的第一个个人网页.html&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;target&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;_blank&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;../resources/image/1.jpg&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;alt&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;标签图片&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;title&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;悬停文字&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;width&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;287&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;height&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;637&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;我的第一个个人网页.html&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;target&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;_blank&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;../resources/image/1.jpg&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;alt&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;标签图片&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;title&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;悬停文字&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;width&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;287&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;height&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;637&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;我的第一个个人网页.html&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;target&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;_blank&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;../resources/image/1.jpg&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;alt&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;标签图片&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;title&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;悬停文字&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;width&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;287&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;height&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;637&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;我的第一个个人网页.html&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;target&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;_blank&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;../resources/image/1.jpg&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;alt&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;标签图片&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;title&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;悬停文字&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;width&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;287&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;height&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;637&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&amp;lt;!--锚标签&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;1.需要一个锚标记&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;2.跳转到标记（使用#来实现）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;3.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;#top&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;回到顶部&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;down&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;down&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&amp;lt;!--功能性链接&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;邮件链接：mailto：&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;qq链接：&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;mailto:2056658384@qq.com&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;点击联系我&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;target&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;_blank&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;http://wpa.qq.com/msgrd?v=3&amp;amp;uin=2056658384&amp;amp;site=qq&amp;amp;menu=yes&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;border&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;0&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;http://wpa.qq.com/pa?p=2:2056658384:53&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;alt&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;你好呀&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;title&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;你好呀&amp;quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;﻿&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+        <category term="随笔" />
+        <updated>2021-08-22T12:02:01.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://liujiayi7.github.io/2021/07/12/%E5%8F%91%E8%A1%A8%E6%96%87%E7%AB%A0%E5%88%B0%E5%8D%9A%E5%AE%A2%E4%B8%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</id>
+        <title>发表文章到博客上遇到的问题及解决方法</title>
+        <link rel="alternate" href="https://liujiayi7.github.io/2021/07/12/%E5%8F%91%E8%A1%A8%E6%96%87%E7%AB%A0%E5%88%B0%E5%8D%9A%E5%AE%A2%E4%B8%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+        <content type="html">&lt;h1 id=&#34;在hexo博客上发表文章遇到的问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#在hexo博客上发表文章遇到的问题&#34;&gt;#&lt;/a&gt; 在 hexo 博客上发表文章遇到的问题&lt;/h1&gt;
+&lt;p&gt;##1、在文章的标题、日期或者 tags 前没有加空格&lt;/p&gt;
+&lt;p&gt;出现如下错误：&lt;/p&gt;
+&lt;p&gt;err: YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 4, column 1:&lt;/p&gt;
+&lt;p&gt;解决方法：&lt;/p&gt;
+&lt;p&gt;回到原文章，加上空格并保存，再重新发布:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo clear&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo g&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+        <category term="随笔" />
+        <updated>2021-07-12T00:36:41.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://liujiayi7.github.io/2021/07/11/%E5%9C%A8%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E5%AE%89%E8%A3%85docker%E5%B9%B6%E6%90%AD%E5%BB%BAwordpress%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA%E7%9A%84%E5%A1%AB%E5%9D%91%E8%87%AA%E6%95%91%E5%B0%8Ftips/</id>
+        <title>在云服务器上安装docker并搭建wordpress博客的奇奇怪怪的填坑自救小tips</title>
+        <link rel="alternate" href="https://liujiayi7.github.io/2021/07/11/%E5%9C%A8%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E5%AE%89%E8%A3%85docker%E5%B9%B6%E6%90%AD%E5%BB%BAwordpress%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA%E7%9A%84%E5%A1%AB%E5%9D%91%E8%87%AA%E6%95%91%E5%B0%8Ftips/"/>
+        <content type="html">&lt;p&gt;WordPress&lt;/p&gt;
+&lt;p&gt;WordPress 是一个非常著名的 PHP 编写的博客平台，发展到目前为止已经形成了一个庞大的网站平台系统。在 WP 上有规模庞大的插件和主题，可以帮助我们快速建立一个博客甚至网站。&lt;/p&gt;
+&lt;p&gt;在 Windows 上可以非常方便的安装 WordPress，因为 IIS 上集成了 WordPress 的一键安装包。而在 Linux 上安装 WordPress 就比较复杂了，我们需要配置 PHP 环境、Apache 或者 Nginx 服务器、MySQL 数据库以及各种权限和访问问题。所以在 Linux 上最好的办法就是使用 Docker 来安装 WordPress。&lt;/p&gt;
+&lt;h2 id=&#34;一-购买服务器阿里云服务器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-购买服务器阿里云服务器&#34;&gt;#&lt;/a&gt; 一、购买服务器（阿里云服务器）&lt;/h2&gt;
+&lt;p&gt;1、在浏览器上搜索阿里云官网：&lt;a href=&#34;https://www.aliyun.com&#34;&gt;https://www.aliyun.com&lt;/a&gt;，出现如下界面：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/2QlpPY6EeFO1vLT.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;点击右上角登录（没有登陆过的小伙伴就注册一下吧）（注册需要用到手机号码、邮箱，身份证号码绑定等，可以根据你的年龄，判定是否使用学生优惠资质）&lt;/p&gt;
+&lt;p&gt;注意：学生购买云轻量服务器是可以续费三年享受同等价格，而 esc 服务器则凭新人只能享有一年优惠政策&lt;/p&gt;
+&lt;p&gt;2、首页的产品栏找到轻量应用服务器根据自身需要购买&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/UHsaMKwDvxQbL1C.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/Zh8t5yBqLn2dXEF.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;根据需要选择系统镜像或者应用镜像，我这里选择的是 Ubuntu 系统镜像，绑定自己支付宝账号，完成支付即可使用。&lt;/p&gt;
+&lt;p&gt;如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/hPgyq5XToAz6KcC.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;h2 id=&#34;二-使用远程连接工具finalshell或者xshell&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-使用远程连接工具finalshell或者xshell&#34;&gt;#&lt;/a&gt; 二、使用远程连接工具（FinalShell 或者 XShell）&lt;/h2&gt;
+&lt;p&gt;官网下载安装即可：&lt;a href=&#34;http://www.hostbuf.com&#34;&gt;http://www.hostbuf.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2. 使用 ssh 链接连接到自己的云服务器&lt;/p&gt;
+&lt;p&gt;如下所示：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/rLidQaCSXtUMys2.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/FLfsqlNTHupwbae.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/1yLzlQ8SXOUFYjK.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;名称随意取即可，密码自己设置（选择安全性高的密码）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/eMtzXlrIF954upv.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;看到如上图所示界面后，双击即可 运行。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/Ds1P9V5tdm87I4A.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;背景图片可以随意设置（点击鼠标右键选择设置背景图片）&lt;/p&gt;
+&lt;h2 id=&#34;三-安装docker&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三-安装docker&#34;&gt;#&lt;/a&gt; 三、安装 docker&lt;/h2&gt;
+&lt;p&gt;如果是 Windows 平台，可以参考&lt;a href=&#34;https://www.jianshu.com/p/baef518962bc&#34;&gt;在 Windows 平台上搭建 Docker 开发环境&lt;/a&gt;。如果在 Linux 环境中，按照所使用的 Linux 的包管理器来安装 Docker 即可。顺便还可以安装&lt;a href=&#34;https://link.jianshu.com/?t=https://kitematic.com/&#34;&gt; Kitematic&lt;/a&gt;，这是一个非常好用的 Docker 图形界面工具。&lt;/p&gt;
+&lt;p&gt;安装完成之后需要启用 Docker 后台服务。如果是国内用户的话可能还需要设置 Docker 加速，可以参考&lt;a href=&#34;https://link.jianshu.com/?t=https://www.google.com/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=2&amp;amp;ved=0ahUKEwjNxO2nvpzTAhWoxVQKHapxB-YQFggkMAE&amp;amp;url=https%3A%2F%2Fyq.aliyun.com%2Farticles%2F29941&amp;amp;usg=AFQjCNE4ihHaQfuXlLIMA6D-L3Ggz2GFvA&amp;amp;sig2=3IcfrRl_ssLajtWDiGy4aA&amp;amp;cad=rjt&#34;&gt; Docker 镜像加速器 - 博客 - 云栖社区 - 阿里云&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;1、更新包&lt;/p&gt;
+&lt;figure class=&#34;highlight pgsql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-&lt;span class=&#34;keyword&#34;&gt;get&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;update&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;2、 安装依赖&lt;/p&gt;
+&lt;figure class=&#34;highlight armasm&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;symbol&#34;&gt;sudo&lt;/span&gt; apt-&lt;span class=&#34;meta&#34;&gt;get&lt;/span&gt; -y install apt-transport-https ca-certificates curl software-properties-&lt;span class=&#34;meta&#34;&gt;common&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;3、安装 GPG 证书&lt;/p&gt;
+&lt;figure class=&#34;highlight awk&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;curl -fsSL http:&lt;span class=&#34;regexp&#34;&gt;//mi&lt;/span&gt;rrors.aliyun.com&lt;span class=&#34;regexp&#34;&gt;/docker-ce/&lt;/span&gt;linux&lt;span class=&#34;regexp&#34;&gt;/ubuntu/g&lt;/span&gt;pg | sudo apt-key add -&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;4、写入源信息&lt;/p&gt;
+&lt;figure class=&#34;highlight smali&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo&lt;span class=&#34;built_in&#34;&gt; add-apt-repository &lt;/span&gt;&lt;span class=&#34;string&#34;&gt;&amp;quot;deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu $(lsb_release -cs) stable&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;5、更新&lt;/p&gt;
+&lt;figure class=&#34;highlight pgsql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-&lt;span class=&#34;keyword&#34;&gt;get&lt;/span&gt; -y &lt;span class=&#34;keyword&#34;&gt;update&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;6、安装&lt;/p&gt;
+&lt;figure class=&#34;highlight vim&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker-&lt;span class=&#34;keyword&#34;&gt;ce&lt;/span&gt; sudo apt-&lt;span class=&#34;built_in&#34;&gt;get&lt;/span&gt; -&lt;span class=&#34;keyword&#34;&gt;y&lt;/span&gt; install docker-&lt;span class=&#34;keyword&#34;&gt;ce&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;7、测试是否成功&lt;/p&gt;
+&lt;figure class=&#34;highlight routeros&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker versionsudo docker &lt;span class=&#34;built_in&#34;&gt;run&lt;/span&gt; hello-world&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;四-安装wordpress&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#四-安装wordpress&#34;&gt;#&lt;/a&gt; 四、安装 wordpress&lt;/h2&gt;
+&lt;p&gt;docker 环境下安装 wordpress 相当简单，仅需一条命令即可&lt;/p&gt;
+&lt;figure class=&#34;highlight ebnf&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;docker pull wordpress&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;latest: 表示默认下载 dockerhub 中 wordpress 的最新版&lt;/p&gt;
+&lt;h2 id=&#34;五-安装mysql&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#五-安装mysql&#34;&gt;#&lt;/a&gt; 五、安装 mysql&lt;/h2&gt;
+&lt;p&gt;WordPress 需要使用 MySQL 数据库，这里也有两种方式，第一种是安装本地 MySQL，第二种就是在 Docker 中安装 MySQL 镜像。如果要在 Docker 中安装 MySQL 也非常简单，同样一条命令搞定。&lt;/p&gt;
+&lt;figure class=&#34;highlight ebnf&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;docker pull mysql&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;如果从 Docker 中安装 MySQL，还需要额外的配置来启动 MySQL，具体文档参考&lt;a href=&#34;https://link.jianshu.com/?t=https://hub.docker.com/r/library/mysql/&#34;&gt;这里&lt;/a&gt;。启动 MySQL 使用下面的命令。&lt;/p&gt;
+&lt;figure class=&#34;highlight routeros&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker &lt;span class=&#34;built_in&#34;&gt;run&lt;/span&gt; --name some-mysql -e &lt;span class=&#34;attribute&#34;&gt;MYSQL_ROOT_PASSWORD&lt;/span&gt;=my-secret-pw -p 3306:3306 -d mysql:tag&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;code&gt;name&lt;/code&gt;  参数指定要启动的实例名称， &lt;code&gt;MYSQL_ROOT_PASSWORD&lt;/code&gt;  指定 ROOT 密码。** &lt;code&gt;tag&lt;/code&gt; ** 参数是 MySQL 的版本号，可以是 &lt;code&gt;5.7&lt;/code&gt; 、 &lt;code&gt;5.6&lt;/code&gt; 、 &lt;code&gt;8.0&lt;/code&gt; 。（只填 tag：默认为下载最新版，也可以不填而选择指定版本号）&lt;/p&gt;
+&lt;p&gt;上面代码可知：&lt;/p&gt;
+&lt;p&gt;数据库名称为：some-mysql root 密码为：my-secret-pw&lt;/p&gt;
+&lt;p&gt;随意设置即可，上面代码可以随意更改。&lt;/p&gt;
+&lt;p&gt;进入 mysql 容器内，创建 wordpress 使用的数据库&lt;/p&gt;
+&lt;figure class=&#34;highlight applescript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker exec -&lt;span class=&#34;keyword&#34;&gt;it&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;some&lt;/span&gt;-mysql /bin/bash&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mysql -u root -p&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;输入密码&lt;/p&gt;
+&lt;p&gt;123456&lt;/p&gt;
+&lt;figure class=&#34;highlight n1ql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;create&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;database&lt;/span&gt; wordpress;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;创建完毕&lt;/p&gt;
+&lt;p&gt;退出 mysql&lt;/p&gt;
+&lt;p&gt;exit&lt;/p&gt;
+&lt;p&gt;再退出容器&lt;/p&gt;
+&lt;p&gt;exit&lt;/p&gt;
+&lt;h2 id=&#34;六-配置wordpress&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#六-配置wordpress&#34;&gt;#&lt;/a&gt; 六、配置 WordPress&lt;/h2&gt;
+&lt;p&gt;注意：应首先将自己的云服务器防火墙打开，添加规则，设置端口，linux 的防火墙也要打开&lt;/p&gt;
+&lt;p&gt;1、云服务器打开防火墙，添加规则，设置端口&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/WuYahBOfjKv1QIo.jpg&#34; alt&gt;根据自己的需要设置即可，下面的部署需要添加 8080、80、3306、3305 这四个端口即可，可备注标识一下开放的端口用处&lt;/p&gt;
+&lt;p&gt;打开 Linux 防火墙：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ufw status&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ufw &lt;span class=&#34;built_in&#34;&gt;disable&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;2、安装好数据库之后，就可以启动 WordPress 了。详细的文档参考&lt;a href=&#34;https://link.jianshu.com/?t=https://hub.docker.com/r/library/wordpress/&#34;&gt;这里&lt;/a&gt;。如果使用 Docker 中安装的 MySQL 实例，使用下面的命令。&lt;/p&gt;
+&lt;figure class=&#34;highlight stylus&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker run &lt;span class=&#34;attr&#34;&gt;--name&lt;/span&gt; some-wordpress &lt;span class=&#34;attr&#34;&gt;--link&lt;/span&gt; some-mysql:mysql -&lt;span class=&#34;selector-tag&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;8080&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;80&lt;/span&gt; -d wordpress&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;code&gt;name&lt;/code&gt;  参数指定要启动的 WordPress 实例名称， &lt;code&gt;link&lt;/code&gt;  参数指定要使用的 Docker MySQL 实例名称， &lt;code&gt;p&lt;/code&gt;  参数将 Docker 内部的 80 端口映射到本地的 8080 端口上。&lt;/p&gt;
+&lt;p&gt;3、如果使用外部的 MySQL 数据库，则输入下面的命令。&lt;/p&gt;
+&lt;figure class=&#34;highlight routeros&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker &lt;span class=&#34;built_in&#34;&gt;run&lt;/span&gt; --name some-wordpress -e &lt;span class=&#34;attribute&#34;&gt;WORDPRESS_DB_HOST&lt;/span&gt;=10.1.2.3:3306 \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -e &lt;span class=&#34;attribute&#34;&gt;WORDPRESS_DB_USER&lt;/span&gt;=... -e &lt;span class=&#34;attribute&#34;&gt;WORDPRESS_DB_PASSWORD&lt;/span&gt;=... -d wordpress&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;code&gt;WORDPRESS_DB_HOST&lt;/code&gt;  参数是 MySQL 的数据库端口号， &lt;code&gt;WORDPRESS_DB_USER&lt;/code&gt;  是要数据库用户名， &lt;code&gt;WORDPRESS_DB_PASSWORD&lt;/code&gt;  是数据库密码。这里的 &lt;code&gt;WORDPRESS_DB_HOST&lt;/code&gt;  参数不能填写 &lt;code&gt;localhost&lt;/code&gt; ，因为这样会重定向到 WordPress 镜像内部的 &lt;code&gt;localhost&lt;/code&gt; ，而这个镜像中实际上没有安装 MySQL。所以这里需要填写本机 IP 地址，才能正确访问到 Docker 外部的本机的数据库。&lt;/p&gt;
+&lt;p&gt;因此需要注意，如果使用外部数据库的话，数据库的用户需要具有外部 IP 的权限，因为这次不是通过本机回环地址访问。默认情况下 MySQL 安装时候的 ROOT 用户只允许本地登录，所以可能需要配置允许用户远程登录。&lt;/p&gt;
+&lt;p&gt;然后打开浏览器，输入 &lt;code&gt;localhost:8080&lt;/code&gt; （端口号是命令中设置的），然后就可以看到 WordPress 了。按照提示输入用户名等信息，然后安装 WordPress。等到它提示安装完成，那么 WordPress 的安装就算大功告成了。&lt;/p&gt;
+&lt;p&gt;最后稍加配置，再添加诸如内网映射等功能之后，站点就可以对外访问了。&lt;/p&gt;
+&lt;p&gt;在浏览器上输入：自己的 ip:8080 (端口号)&lt;/p&gt;
+&lt;p&gt;得到如下界面：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/ZEBVgau5ewmQb9d.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/FW1oheutPrHAb9T.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;到这里你的 wordpress 博客就搭建成功啦！&lt;/p&gt;
+&lt;h2 id=&#34;七-搭建过程中遇到的问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#七-搭建过程中遇到的问题&#34;&gt;#&lt;/a&gt; 七、搭建过程中遇到的问题&lt;/h2&gt;
+&lt;p&gt;1、报错：docker：error response from……&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/07/13/KzdMlhRTOyWe7Ii.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;解决方法：重新启用容器&lt;/p&gt;
+&lt;figure class=&#34;highlight maxima&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker &lt;span class=&#34;built_in&#34;&gt;restart&lt;/span&gt; 数据库名&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;2、Docker 镜像拉取报错：Error response from daemon: Get &lt;a href=&#34;https://registry-1.docker.io/v2/:&#34;&gt;https://registry-1.docker.io/v2/:&lt;/a&gt; dial tcp: lookup registry-1.docker&lt;/p&gt;
+&lt;p&gt;2.1、打开 daemon.json 文件：&lt;/p&gt;
+&lt;figure class=&#34;highlight awk&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;vi &lt;span class=&#34;regexp&#34;&gt;/etc/&lt;/span&gt;docker/daemon.json&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;2.2、在里面输入阿里云镜像配置：&lt;/p&gt;
+&lt;figure class=&#34;highlight prolog&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;string&#34;&gt;&amp;quot;registry-mirrors&amp;quot;&lt;/span&gt;:[&lt;span class=&#34;string&#34;&gt;&amp;quot;https://6kx4zyno.mirror.aliyuncs.com&amp;quot;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;2.3、重启 docker 服务:&lt;/p&gt;
+&lt;figure class=&#34;highlight ebnf&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;sudo systemctl restart docker&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;3、当你发现自己安装容器并创建联系错误时，删掉这些容器是没用的，因为它们已经在你设置的端口上跑起来了，占用了端口&lt;/p&gt;
+&lt;p&gt;解决方法：停止运行并删除：&lt;/p&gt;
+&lt;figure class=&#34;highlight arduino&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker stop 容器名&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker rm 容器名&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;八-在wordpress博客上的主题美化是很方便的&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#八-在wordpress博客上的主题美化是很方便的&#34;&gt;#&lt;/a&gt; 八、在 wordpress 博客上的主题美化是很方便的&lt;/h2&gt;
+&lt;p&gt;1、进入博客首页可更换自己的头像、用户名等。&lt;/p&gt;
+&lt;p&gt;2、博客首页左侧边栏有外观这一选项，点击即可更换主题等。&lt;/p&gt;
+&lt;h2 id=&#34;结语&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#结语&#34;&gt;#&lt;/a&gt; 结语：&lt;/h2&gt;
+&lt;h2 id=&#34;一定要认真按照教程走别自己摸索会少走很多弯路既然已经搭建博客了就不要让它空空的在你完成一个小目标或者实现一个大突破时就可以把你做这些事情的经验写下来这也是在爱好生活的一种表现啊&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一定要认真按照教程走别自己摸索会少走很多弯路既然已经搭建博客了就不要让它空空的在你完成一个小目标或者实现一个大突破时就可以把你做这些事情的经验写下来这也是在爱好生活的一种表现啊&#34;&gt;#&lt;/a&gt; 一定要认真按照教程走，别自己摸索，会少走很多弯路，既然已经搭建博客了，就不要让它空空的，在你完成一个小目标或者实现一个大突破时，就可以把你做这些事情的经验写下来，这也是在爱好生活的一种表现啊！&lt;/h2&gt;
+&lt;h2 id=&#34;愿我们都能变得勇敢且坚强&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#愿我们都能变得勇敢且坚强&#34;&gt;#&lt;/a&gt; 愿我们都能变得勇敢且坚强！&lt;/h2&gt;
+</content>
+        <category term="随笔" />
+        <updated>2021-07-11T11:34:07.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://liujiayi7.github.io/2021/05/25/kali-linux%E7%9A%84%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/</id>
+        <title>kali-linux的相关配置</title>
+        <link rel="alternate" href="https://liujiayi7.github.io/2021/05/25/kali-linux%E7%9A%84%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/"/>
+        <content type="html">&lt;h1 id=&#34;kali-linux的相关配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#kali-linux的相关配置&#34;&gt;#&lt;/a&gt; kali-linux 的相关配置&lt;/h1&gt;
+&lt;h2 id=&#34;一-kali-linux更换系统语言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-kali-linux更换系统语言&#34;&gt;#&lt;/a&gt; 一、kali-linux 更换系统语言&lt;/h2&gt;
+&lt;p&gt;注意：喜欢英文班的小伙伴可以不用换&lt;/p&gt;
+&lt;h3 id=&#34;11-安装中文字体一般在安装虚拟机的时候会有会默认系统语言区域为all-locales&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11-安装中文字体一般在安装虚拟机的时候会有会默认系统语言区域为all-locales&#34;&gt;#&lt;/a&gt; 1.1、安装中文字体（一般在安装虚拟机的时候会有会默认系统语言区域为 all locales）&lt;/h3&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;apt install ttf-wqy-zenhei&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;12-设置系统语言区域&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#12-设置系统语言区域&#34;&gt;#&lt;/a&gt; 1.2、设置系统语言区域&lt;/h3&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;dpkg-ewconfigure locales&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;输入命令后会出现如下界面：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/25/OyATBEounLUCrxk.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/25/taKfHsQdOpURFSM.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/25/Vcle7TOokuDFPd1.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;注意：使用方位键进行上下选项的选择，使用空格键选中选项，之后使用 tab 键跳出选项，切换到 ok 按钮，同样使用空格键选择 ok 选项即可&lt;/p&gt;
+&lt;p&gt;在选项中选择两个语言区域选项：[zh_CN.GBK GBK]、[zh_CN.UTF_8 UTF_8]，取消系统默认的语言区域：[en_us.UTF_8 UTF_8] (同样点击空格键即可)&lt;/p&gt;
+&lt;p&gt;进行下一步，选择 [zh_CN.UTF_8] 作为区域语言设置，点击 tab 键切换到 ok 选项，点击确定，到此结束。&lt;/p&gt;
+&lt;h3 id=&#34;13-重启系统即可看到中文版的系统界面&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#13-重启系统即可看到中文版的系统界面&#34;&gt;#&lt;/a&gt; 1.3、重启系统即可看到中文版的系统界面&lt;/h3&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;reboot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;注意：以上所有命令都是在系统终端的命令行中输入&lt;/p&gt;
+&lt;h2 id=&#34;二-系统联网问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-系统联网问题&#34;&gt;#&lt;/a&gt; 二、系统联网问题&lt;/h2&gt;
+&lt;p&gt;不知道为什么，我的虚拟机中的系统每次联网都会出问题，当然这次也是，网上的方法基本都试过了，没啥用，下面这种方法还是比较有效的。&lt;/p&gt;
+&lt;h3 id=&#34;21-首先再虚拟机设置中将网络适配器中的网络连接模式修改为nat模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#21-首先再虚拟机设置中将网络适配器中的网络连接模式修改为nat模式&#34;&gt;#&lt;/a&gt; 2.1、首先再虚拟机设置中将网络适配器中的网络连接模式修改为 NAT 模式&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/25/QpA4R6yHsUuxePo.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;h3 id=&#34;22-打开终端在根目录下输入命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#22-打开终端在根目录下输入命令&#34;&gt;#&lt;/a&gt; 2.2、打开终端，在根目录下输入命令：&lt;/h3&gt;
+&lt;figure class=&#34;highlight elixir&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;root&lt;span class=&#34;variable&#34;&gt;@kali&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;:~&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;#  dev                //查找可用的WiFi适配器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;root&lt;span class=&#34;variable&#34;&gt;@kali&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;:~&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;#  link show wlan0    //查看无线网卡设备状态&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;root&lt;span class=&#34;variable&#34;&gt;@kali&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;:~&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;#  link set wlan0 up   //打开WiFi接口&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&#34;highlight elixir&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;以下是一些相关命令，如果上面的三条命令解决不了，再继续输入下方命令：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;显示网络信息:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;root&lt;span class=&#34;variable&#34;&gt;@kali&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;:~&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;# ifconfig&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;root&lt;span class=&#34;variable&#34;&gt;@kali&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;:~&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;# ip link show wlan0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;查看连接状态:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;root&lt;span class=&#34;variable&#34;&gt;@kali&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;:~&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;# iw wlan0 link&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;扫描无线网络:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;root&lt;span class=&#34;variable&#34;&gt;@kali&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;:~&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;# iw wlan0 scan&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;生成wpa/wpa2配置文件:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;root&lt;span class=&#34;variable&#34;&gt;@kali&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;:~&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;# wpa_passphrase blackMOREOps &amp;gt;&amp;gt; /etc/wpa_supplicant.conf&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;注&lt;span class=&#34;symbol&#34;&gt;:&lt;/span&gt;手动输入wpa_passphrase作为blackMOREOps网络密钥&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;修改/etc/wpa_supplicant.con配置文件:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;root&lt;span class=&#34;variable&#34;&gt;@kali&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;:~&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;#  cat /etc/wpa_supplicant.conf&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;连接WPA/WPA2 WiFi网络:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;root&lt;span class=&#34;variable&#34;&gt;@kali&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;:~&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;# wpa_supplicant -B -D wext -i wlan0 -c /etc/wpa_supplicant.conf&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;测试连接:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;root&lt;span class=&#34;variable&#34;&gt;@kali&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;:~&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;#  iw wlan0 link&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;使用dhclient获得&lt;span class=&#34;symbol&#34;&gt;IP:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;root&lt;span class=&#34;variable&#34;&gt;@kali&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;:~&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;# dhclient wlan0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;查看无线网络:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;root&lt;span class=&#34;variable&#34;&gt;@kali&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;:~&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;# ifconfig&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;root&lt;span class=&#34;variable&#34;&gt;@kali&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;:~&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;# ip addr show wlan0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;开启无线网卡:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;root&lt;span class=&#34;variable&#34;&gt;@kali&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;:~&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;# ifconfig wlan0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;root&lt;span class=&#34;variable&#34;&gt;@kali&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;:~&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;# ifconfig wlan0 up&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;添加理由规则:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;root&lt;span class=&#34;variable&#34;&gt;@kali&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;:~&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;# ip route show&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;测试谷歌连接:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;root&lt;span class=&#34;variable&#34;&gt;@kali&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;:~&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;# ping 8.8.8.8&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;重启:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;root&lt;span class=&#34;variable&#34;&gt;@kali&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;:~&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;# reboot&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;注意：我是通过这种方法连上无线网了，方法仅供参考！&lt;/p&gt;
+&lt;p&gt;参考大牛链接：&lt;a href=&#34;https://www.jianshu.com/u/761dc463624e&#34;&gt;https://www.jianshu.com/u/761dc463624e&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="随笔" />
+        <updated>2021-05-25T09:54:45.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://liujiayi7.github.io/2021/05/17/java%E5%AD%A6%E4%B9%A0%E8%A6%81%E7%82%B9/</id>
+        <title>java学习要点</title>
+        <link rel="alternate" href="https://liujiayi7.github.io/2021/05/17/java%E5%AD%A6%E4%B9%A0%E8%A6%81%E7%82%B9/"/>
+        <content type="html">&lt;h1 id=&#34;一-变量的类型转换&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-变量的类型转换&#34;&gt;#&lt;/a&gt; 一、变量的类型转换&lt;/h1&gt;
+&lt;h2 id=&#34;1-自动类型转换&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-自动类型转换&#34;&gt;#&lt;/a&gt; 1、自动类型转换&lt;/h2&gt;
+&lt;p&gt;满足条件：&lt;/p&gt;
+&lt;p&gt;（1）：两种类型彼此兼容。&lt;/p&gt;
+&lt;p&gt;（2）：目标类型的取值范围大于源类型的取值范围。&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;byte&lt;/span&gt; b=&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; x=b;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;两种不同的类型，编译却不报错，就是这个原因，输出结果，x=3。&lt;/p&gt;
+&lt;p&gt;下面为数据范围排列（从小到大）：&lt;/p&gt;
+&lt;p&gt;byte -&amp;gt;short (必转)-&amp;gt;int -&amp;gt;long -&amp;gt;float (必转) -&amp;gt;double&lt;/p&gt;
+&lt;p&gt;​               char (必转)-&amp;gt;int -&amp;gt;long -&amp;gt;float (必转) -&amp;gt;double&lt;/p&gt;
+&lt;h2 id=&#34;2-强制类型转换显式类型转换&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-强制类型转换显式类型转换&#34;&gt;#&lt;/a&gt; 2、强制类型转换（显式类型转换）&lt;/h2&gt;
+&lt;p&gt;注意：会有数据丢失，不建议使用！！！&lt;/p&gt;
+&lt;p&gt;满足条件：&lt;/p&gt;
+&lt;p&gt;（1）：两种类型彼此不兼容（如果兼容电脑就自动进行类型转换了）。&lt;/p&gt;
+&lt;p&gt;（2）：目标类型取值范围小于源类型。&lt;/p&gt;
+&lt;p&gt;转换格式：&lt;/p&gt;
+&lt;p&gt;目标类型 变量 =（目标类型）值&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; num=&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;byte&lt;/span&gt; b=(&lt;span class=&#34;type&#34;&gt;byte&lt;/span&gt;)num;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;系统不会报错，输出结果：b=3&lt;/p&gt;
+&lt;h1 id=&#34;二-while与do-while循环语句的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-while与do-while循环语句的区别&#34;&gt;#&lt;/a&gt; 二、while 与 do while 循环语句的区别&lt;/h1&gt;
+&lt;p&gt;while 语法结构：&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;初始化语句;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt;（条件判断语句）&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    循环体语句;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        条件控制语句;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;do while 语法结构：&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;初始化语句;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;keyword&#34;&gt;do&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    循环体语句;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       条件控制语句;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       ...&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt;（条件判断语句）&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;前者循环先判断再执行，而后者先执行循环体再执行循环条件（条件判断语句）。&lt;/p&gt;
+&lt;h1 id=&#34;三-scanner和random关键字使用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三-scanner和random关键字使用&#34;&gt;#&lt;/a&gt; 三、Scanner 和 Random 关键字使用&lt;/h1&gt;
+&lt;h2 id=&#34;1-scanner关键字&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-scanner关键字&#34;&gt;#&lt;/a&gt; 1、Scanner 关键字：&lt;/h2&gt;
+&lt;p&gt;作用：数据输入&lt;/p&gt;
+&lt;p&gt;（1）导包（必须出现在类定义上方）&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; java.util.Scanner;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;（2）创建对象&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Scanner sc=&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Scanner&lt;/span&gt;(System.in);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;（3）接收数据&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; i=sc.nextInt();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;注意：只有 i 是变量名可变，其他均不可变。&lt;/p&gt;
+&lt;h2 id=&#34;2-random关键字&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-random关键字&#34;&gt;#&lt;/a&gt; 2、Random 关键字：&lt;/h2&gt;
+&lt;p&gt;作用：产生一个随机数&lt;/p&gt;
+&lt;p&gt;（1）导包（必须出现在类定义上方）&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; java.util.Random;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;（2）创建对象&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Random r=&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Random&lt;/span&gt;(System.in);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;（3）获取随机数&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; number=r.nextInt(数值);    &lt;span class=&#34;comment&#34;&gt;//括号中的数值根据你想要获取再什么范围中的随机数选取&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;number&amp;quot;&lt;/span&gt;+number);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;注意：只有 i 是变量名可变，其他均不可变。&lt;/p&gt;
+&lt;h2 id=&#34;四-异常&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#四-异常&#34;&gt;#&lt;/a&gt; 四、异常&lt;/h2&gt;
+&lt;p&gt;异常的分类：&lt;/p&gt;
+&lt;p&gt;（1）编译时异常&lt;/p&gt;
+&lt;p&gt;（2）运行时异常&lt;/p&gt;
+&lt;p&gt;（3）自定义异常&lt;/p&gt;
+&lt;p&gt;Java 提供了大量的异常类，这些类都继承自 java.lang.Throwable 类的继承体系，如下所示：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/19/MxV97Gtr5SmFfPW.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;###1、编译时异常&lt;/p&gt;
+&lt;p&gt;特点：Java 编译器会对异常进行检查，且如果出现异常就必须对异常进行处理，否则程序无法通过编译。以下有两种方式处理编译时期的异常：&lt;/p&gt;
+&lt;p&gt;（1）使用 try  catch 语句对异常进行捕获处理。&lt;/p&gt;
+&lt;p&gt;（2）使用 throws 关键字声明 抛出异常，调用者对异常进行处理。&lt;/p&gt;
+&lt;h3 id=&#34;2-运行时异常&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-运行时异常&#34;&gt;#&lt;/a&gt; 2、运行时异常&lt;/h3&gt;
+&lt;p&gt;特点：Java 编译器不会对异常进行检查，当程序出现异常时即使不使用 try catch 豫剧队异常进行捕获处理或者 throws 关键字声明抛出异常，程序也能编译通过，一般由程序的逻辑错误引起的，且在程序运行时无法恢复。例如数组的角标越界：&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;[] arr=&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;int&lt;/span&gt;[&lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;System.out.println(arr[&lt;span class=&#34;number&#34;&gt;6&lt;/span&gt;]);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;定义一个数组长度为 5 的数组，最大角标应为 4。&lt;/p&gt;
+&lt;h3 id=&#34;3-自定义异常&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-自定义异常&#34;&gt;#&lt;/a&gt; 3、自定义异常&lt;/h3&gt;
+&lt;p&gt;JDK 定义了大量的异常类，可以描述程序出现的大部分的异常情况，但在程序开发中有时可能需要描述程序中特有的异常情况，Java 允许用户自定义异常，但自定义的异常类必须继承自 Exception 或其子类。若没有特殊要求，默认自定义的异常类只需继承 Exception 类，再构造方法中使用 super（）语句调用 Exception 的构造方法即可。&lt;/p&gt;
+&lt;p&gt;注意：必须先声明异常类，否则程序报错，找不到异常类，不运行。&lt;/p&gt;
+&lt;p&gt;自定义异常类中使用 throw 关键字在方法中声明异常的实例对象，语法格式如下：&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;throw&lt;/span&gt; Exception 异常对象&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/20/5lDH9Y2Gj4PcgiA.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/20/yTZrxie9oIX1wuj.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;加上声明的异常类即可运行！！！&lt;/p&gt;
+</content>
+        <category term="随笔" />
+        <updated>2021-05-17T11:18:58.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://liujiayi7.github.io/2021/05/15/VMware%20tools%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</id>
+        <title>VMware tools安装方法</title>
+        <link rel="alternate" href="https://liujiayi7.github.io/2021/05/15/VMware%20tools%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/"/>
+        <content type="html">&lt;h1 id=&#34;vmware-tools安装方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vmware-tools安装方法&#34;&gt;#&lt;/a&gt; VMware tools 安装方法&lt;/h1&gt;
+&lt;h2 id=&#34;一-联网问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-联网问题&#34;&gt;#&lt;/a&gt; 一、联网问题&lt;/h2&gt;
+&lt;p&gt;现在 14 以上的版本的 Ubuntu 系统在安装 VMware tools 时都会提醒一句这样的话：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/15/FlKMiBPjQgA2Z5O.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;所以，在安装 tools 工具时，我们要先令虚拟机处于联网状态。&lt;/p&gt;
+&lt;p&gt;###1.1、测试你的虚拟机是否联网&lt;/p&gt;
+&lt;p&gt;打开你的虚拟机，打开火狐浏览器，输入你想搜索的东西来测试虚拟机是否联网，如果可以搜索到，那就说明虚拟机处于联网状态。如果没有，反而出现下图所示情况，那么，伙伴，只能说，很悲惨，我们要先联网才行。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/15/jaVLiSJ9pHzRxXQ.png&#34; alt&gt;&lt;/p&gt;
+&lt;h3 id=&#34;12-桌面右上角并没有出现wifi标志且没有联网&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#12-桌面右上角并没有出现wifi标志且没有联网&#34;&gt;#&lt;/a&gt; 1.2、桌面右上角并没有出现 WiFi 标志且没有联网&lt;/h3&gt;
+&lt;p&gt;这一条是提供给没有联网（专指 WiFi）的小伙伴参考的，联上网的大佬可以忽略！&lt;/p&gt;
+&lt;p&gt;本人安装虚拟机时就出现的是这种情况，并且 在网上百度过很多方法都不可行（重启虚拟机、关闭虚拟机再编辑设置、设置以太网的共享方式等），这一种是最有效的，希望可以解决你发生的和我一样的的问题。&lt;/p&gt;
+&lt;p&gt;解决方法：&lt;/p&gt;
+&lt;p&gt;1、打开虚拟机，点击右键，打开终端，在命令行中输入：&lt;/p&gt;
+&lt;figure class=&#34;highlight awk&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo vi &lt;span class=&#34;regexp&#34;&gt;/etc/&lt;/span&gt;NetworkManger/NetworkManger.conf&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;编辑 /etc/NetworkManger/NetworkManger.conf，将其中的 managed=false 改为 managed=true&lt;/p&gt;
+&lt;p&gt;2、重启 network-manager service&lt;/p&gt;
+&lt;figure class=&#34;highlight ebnf&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;sudo service network-manager restart&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/15/uCsgEISnrYV2ka8.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;3、点击桌面右上角联网标志，显示已经联网&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/15/uV32LcEFniwfQTD.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/15/utQEJrpezcjNRVX.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;h2 id=&#34;二-安装vmware-tools&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-安装vmware-tools&#34;&gt;#&lt;/a&gt; 二、安装 VMware tools&lt;/h2&gt;
+&lt;h3 id=&#34;1-安装vmware-tools的好处&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-安装vmware-tools的好处&#34;&gt;#&lt;/a&gt; 1、安装 VMware  tools 的好处&lt;/h3&gt;
+&lt;p&gt;1.1、更新虚拟机中的显卡驱动，使虚拟机中的 XWindows 可以运行在 SVGA 模式下.&lt;/p&gt;
+&lt;p&gt;1.2、提供一个 vmware-toolbox, 这个 Xwindows 下的工具可以让你修改一些 VMWare 的参数和功能.&lt;/p&gt;
+&lt;p&gt;1.3、同步虚拟机和 Host 的时间.&lt;/p&gt;
+&lt;p&gt;1.4、支持同一个分区的真实启动和从虚拟机中启动，自动修改相应的设置文件.&lt;br&gt;
+VMware 强烈建议你在每一台虚拟机中完成操作系统安装之后立即安装 VMware Tools 套件。在客户操作系统中安装 VMware Tools 非常重要。如果你不安装 VMware Tools，虚拟机中的图形环境被限制为 VGA 模式图形 (640x480，16 色)。&lt;br&gt;
+使用 VMware Tools，SVGA 驱动程序被安装，VMware Workstation 支持最高 32 位显示和高显示分辨率，显著提升总体的图形性能。&lt;br&gt;
+工具包中的其他工具通过支持下面的增强，让你更方便地使用你的虚拟机。注意，只有正在运行 VMware Tools 时，这些增强才可用。&lt;br&gt;
+1.5、在主机和客户机之间时间同步&lt;br&gt;
+注释：只有当你在客户操作系统中设置时钟为一个比在主机中设置的时间更早的时间时，才可以在客户和主机操作系统之间同步时间。&lt;br&gt;
+1.6、自动捕获和释放鼠标光标&lt;br&gt;
+在主机和客户机之间或者从一台虚拟机到另一台虚拟机进行复制和粘贴操作&lt;br&gt;
+ 1.7、改善的网络性能&lt;br&gt;
+ VMware Tools 工具包由两个组件组成:&lt;br&gt;
+ 一个为 VMware Workstation 虚拟图形卡优化的图形驱动程序。对于 Linux 客户操作系统，它包含我们自己的 XFree86 X server 版本。图形驱动程序由向导安装。安装之后，需要在重启动之后才可以使用。&lt;br&gt;
+一个小的后台应用程序，允许你在虚拟机中更改配置设置。&lt;/p&gt;
+&lt;h3 id=&#34;2-安装tools工具压缩包&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-安装tools工具压缩包&#34;&gt;#&lt;/a&gt; 2、安装 tools 工具压缩包&lt;/h3&gt;
+&lt;p&gt;在 VMware Workstation 菜单栏中找到虚拟机并点击，找到安装 VMware tools 并点击即可&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/15/DspnvZcw9j8HgxV.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;提示安装 VMware Tools 的执行步骤，会出现提示，点击执行即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/15/KPOo1jzdMcGn2lD.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;进入文件系统，选择 VMware Tools&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/15/baVZGRHqxEN3o9Y.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/15/q95Lm1EdHQC7Zig.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;选择用归档管理器打开&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/15/Bh28QtarqUsENMK.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;选择里面的文件 VMware-tools-dietrib 点击右键，选择提取到你想要提取到的位置，我这里选择提取到桌面&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/15/dUmTZEoh2RM4V6t.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;选择该文件，点击右键，打开终端&lt;/p&gt;
+&lt;p&gt;输入安装命令：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo ./vmware-install.pl&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/15/ESkiVdzxbN84fQw.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/15/pAkhmbo6nTEH4US.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;提示需要输入 yes 的输入 yes，其它的直接一路回车即可。&lt;/p&gt;
+&lt;p&gt;安装完成之后，你的桌面从小屏一下子就变成大屏了，嘿嘿嘿，感觉视野都变开阔了呢。ok，到此，tools 工具的安装就大功告成了！&lt;/p&gt;
+</content>
+        <category term="随笔" />
+        <updated>2021-05-15T06:36:45.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://liujiayi7.github.io/2021/05/08/%E9%83%A8%E7%BD%B2hexo%E6%97%B6%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</id>
+        <title>搭建hexo时踩过的坑及解决办法（GitHub托管）</title>
+        <link rel="alternate" href="https://liujiayi7.github.io/2021/05/08/%E9%83%A8%E7%BD%B2hexo%E6%97%B6%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+        <content type="html">&lt;h1 id=&#34;搭建hexo时踩过的坑及解决办法github托管&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#搭建hexo时踩过的坑及解决办法github托管&#34;&gt;#&lt;/a&gt; 搭建 hexo 时踩过的坑及解决办法（GitHub 托管）&lt;/h1&gt;
+&lt;p&gt;## 一、hexo 简介&lt;/p&gt;
+&lt;p&gt;Hexo 是一个简单地、轻量地、基于 Node.js 的一个静态博客框架，可以方便的生成静态网页。&lt;/p&gt;
+&lt;h2 id=&#34;二-安装hexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-安装hexo&#34;&gt;#&lt;/a&gt; 二、安装 hexo&lt;/h2&gt;
+&lt;h3 id=&#34;1-安装hexo前提&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-安装hexo前提&#34;&gt;#&lt;/a&gt; 1、安装 hexo 前提&lt;/h3&gt;
+&lt;p&gt;安装 Hexo 相当简单，只需要先安装下列应用程序即可：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://nodejs.org/&#34;&gt;Node.js&lt;/a&gt; (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://git-scm.com/&#34;&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;####1.1、安装 Git&lt;/p&gt;
+&lt;p&gt;Windows：下载并安装 git.(注意：该软件最好安装在除 C 盘外的其他盘，点击下载好的 exe 文件，一路 next 即可安装完成)&lt;br&gt;
+ Mac：使用 Homebrew, MacPorts 或者下载 安装程序。&lt;/p&gt;
+&lt;figure class=&#34;highlight cmake&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Linux (Ubuntu, Debian)：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get &lt;span class=&#34;keyword&#34;&gt;install&lt;/span&gt; git-core&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Linux (Fedora, Red Hat, CentOS)：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo yum &lt;span class=&#34;keyword&#34;&gt;install&lt;/span&gt; git-core&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在 git bash 命令行窗口中输入以下命令即可查看下载版本&lt;/p&gt;
+&lt;figure class=&#34;highlight applescript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;version&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;####1.2、安装 Node.js&lt;/p&gt;
+&lt;p&gt;Node.js 为大多数平台提供了官方的 安装程序。对于中国大陆地区用户，可以前往 淘宝 Node.js 镜像 下载。当然，对于玩电脑很溜，接触过外网或者有 VPN 及其他的翻墙软件也是可以在官网上下载的，速度也很快。（注意事项与安装 git 相同）&lt;br&gt;
+其它的安装方法：&lt;br&gt;
+Windows：通过 nvs（推荐）或者 nvm 安装。&lt;br&gt;
+Mac：使用 Homebrew 或 MacPorts 安装。&lt;br&gt;
+Linux（DEB/RPM-based）：从 NodeSource 安装。&lt;br&gt;
+其它：使用相应的软件包管理器进行安装，可以参考由 Node.js 提供的 指导&lt;br&gt;
+在电脑自带的 cmd 窗口输入命令： &lt;code&gt;node&lt;/code&gt;  可查看 Node.js 的版本&lt;/p&gt;
+&lt;figure class=&#34;highlight crmsh&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;检测是否安装完成，可在cmd命令行输入以下命令：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;keyword&#34;&gt;node&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;-v&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   npm -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;###2、安装 hexo&lt;/p&gt;
+&lt;p&gt;所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。（由于 git bash 命令行工具比电脑自带的 cmd 命令行窗口更方便，所以最好都在 git bash 窗口中输入命令来进行搭建）&lt;br&gt;
+看到这么多安装命令，稳住，不要慌，避免因为紧张而出错。&lt;br&gt;
+首先，在根目录下先创建一个文件夹（用来存放所有 blog 的东西，命名随意），然后 cd 到该文件夹下，右键双击，打开 git bush。&lt;br&gt;
+在 git bash 命令行窗口中输入安装命令：&lt;/p&gt;
+&lt;figure class=&#34;highlight avrasm&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install -g hexo-&lt;span class=&#34;keyword&#34;&gt;cli&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;初始化一下&lt;/p&gt;
+&lt;figure class=&#34;highlight csharp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo &lt;span class=&#34;keyword&#34;&gt;init&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;初始化完成之后就会在创建过的文件夹下看到以下文件：&lt;/p&gt;
+&lt;figure class=&#34;highlight gradle&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;node_modules：是依赖包&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt;：存放的是生成的页面&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;scaffolds：命令生成文章等的模板&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;source&lt;/span&gt;：用命令创建的各种文章&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;themes：主题&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;_config.yml：整个博客的配置&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;db.json：&lt;span class=&#34;keyword&#34;&gt;source&lt;/span&gt;解析所得到的&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;package&lt;/span&gt;.json：项目所需模块项目的配置信息&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;三-部署到github&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三-部署到github&#34;&gt;#&lt;/a&gt; 三、部署到 GitHub&lt;/h2&gt;
+&lt;h3 id=&#34;1-创建一个github账号并登录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-创建一个github账号并登录&#34;&gt;#&lt;/a&gt; 1、创建一个 GitHub 账号并登录&lt;/h3&gt;
+&lt;p&gt;没有接触过 GitHub 的同学可以看一下，接触过的大佬可以自动忽略啊～～～&lt;/p&gt;
+&lt;p&gt;浏览器搜索 GitHub 官网并打开，在首页输入自己的邮箱，点击 sign up for github&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/10/87OXJQyevgHTo5j.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;之后进入该页面，创建个人账户，输入自己的用户名（英文），邮箱地址和用户密码，验证你的账户后点击 create account 即可，到此时，你的个人 GitHub 账户已经创建成功了！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/10/f9Du4h6SGJ7gkUH.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-创建一个repo仓库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-创建一个repo仓库&#34;&gt;#&lt;/a&gt; 2、创建一个 repo（仓库）&lt;/h3&gt;
+&lt;p&gt;名称最好命名为 ```yourname.github.io`, 其中 yourname 是你的账户名&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/10/EbFPsAli2YuqHUv.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/10/mQbjA2RqFhSx5lz.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;在初次建立仓库时最好选择 public（对所有人公开可见），防止之后在 GitHub 上部署 hexo 时出现很多问题，点击 create repository 创建仓库完成！&lt;/p&gt;
+&lt;h3 id=&#34;3-生成ssh添加到github&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-生成ssh添加到github&#34;&gt;#&lt;/a&gt; 3、生成 ssh 添加到 GitHub&lt;/h3&gt;
+&lt;p&gt;cd 到你新建的文件夹下，双击右键，打开 git bash，输入以下命令：&lt;/p&gt;
+&lt;figure class=&#34;highlight stylus&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git config &lt;span class=&#34;attr&#34;&gt;--global&lt;/span&gt; user&lt;span class=&#34;selector-class&#34;&gt;.name&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;yourname&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config &lt;span class=&#34;attr&#34;&gt;--global&lt;/span&gt; user&lt;span class=&#34;selector-class&#34;&gt;.email&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;youremail&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;其中 yourname 是你的 GitHub 账户名，youremail 是你的邮箱&lt;/p&gt;
+&lt;p&gt;然后创建 ssh，一路回车。&lt;/p&gt;
+&lt;figure class=&#34;highlight excel&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ssh-keygen -&lt;span class=&#34;built_in&#34;&gt;t&lt;/span&gt; rsa -C &lt;span class=&#34;string&#34;&gt;&amp;quot;youremail&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;注意：c 是大写，不然运行不成功&lt;/p&gt;
+&lt;p&gt;输入命令并运行成功之后，你的文件夹中会出现一个.ssh 的文件夹，在你的电脑上找到这个文件夹并打开，大概是这个样子&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/10/8jXaklwqQv5GVrg.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;用记事本打开 rsa.pub 把里面的内容复制下来&lt;/p&gt;
+&lt;p&gt;之后，回到你的 GitHub 主页，点击 settings，在左边栏找到 ssh 这一选项并点击，得到以下界面；&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/10/XqbDzegV5FP26nH.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/10/RDEMHsY87KTZIS6.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/10/y24UBcr6KHXGvwV.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;点击 new ssh key&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/10/bFEMs5yxTjAVYhv.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;title 随便设置，将你在 rsa.pub 中的内容复制粘贴到 key 栏中，点击 add ssh key 即创建密钥完成&lt;/p&gt;
+&lt;p&gt;在 gitbash 中，查看是否成功：&lt;/p&gt;
+&lt;figure class=&#34;highlight nginx&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;ssh&lt;/span&gt; -T git&lt;span class=&#34;variable&#34;&gt;@github&lt;/span&gt;.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;四-将hexo部署到github&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#四-将hexo部署到github&#34;&gt;#&lt;/a&gt; 四、将 hexo 部署到 GitHub&lt;/h2&gt;
+&lt;p&gt;这一步，我们就可以将 hexo 和 GitHub 关联起来，将 hexo 生成的文章部署到 GitHub 上&lt;/p&gt;
+&lt;p&gt;首先，我们可以先下载一个 sublime Text 软件（最好下载在除 C 盘外的其他盘中）&lt;/p&gt;
+&lt;p&gt;在官网上下载&lt;/p&gt;
+&lt;p&gt;下载链接如下：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.sublimetext.com&#34;&gt;https://www.sublimetext.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;根据自己电脑的版本来选择安装包进行下载&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/10/dVAYrNhxLFtbaTq.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;在根目录下找到_config.yml 站点配置文件，选择用 Sublime 打开，翻到最后面，修改为：&lt;/p&gt;
+&lt;figure class=&#34;highlight dts&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;symbol&#34;&gt;deploy:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;symbol&#34;&gt;  type:&lt;/span&gt; git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;symbol&#34;&gt;  repo:&lt;/span&gt; https:&lt;span class=&#34;comment&#34;&gt;//github.com/YourgithubName/YourgithubName.github.io.git&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;symbol&#34;&gt;  branch:&lt;/span&gt; master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;把 hexo 的 author 修改为你的账户名&lt;/p&gt;
+&lt;figure class=&#34;highlight ldif&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Hexo Configuration&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;## Docs: https://hexo.io/docs/configuration.html&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;## Source: https://github.com/hexojs/hexo/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Site&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;title&lt;/span&gt;: LiuJiaYi7&amp;#x27;s blog &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;subtitle&lt;/span&gt;: &amp;#x27;&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;description&lt;/span&gt;: &amp;#x27;&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;keywords&lt;/span&gt;: &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;author&lt;/span&gt;: yourname&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;language&lt;/span&gt;: zh-CN&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;timezone&lt;/span&gt;: &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&#34;highlight awk&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# URL&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;## Set your site url here. For example, if you use GitHub Page, set url as &amp;#x27;https://username.github.io/project&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;url: https:&lt;span class=&#34;regexp&#34;&gt;//u&lt;/span&gt;sername.github.io/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;注意：冒号后面先空格在输入代码，否则会报错，部署不成功，不要因为这点小问题阻挡住你前进的脚步！！！（不要问我怎么知道的，我也犯过相同的错误）&lt;/p&gt;
+&lt;p&gt;修改之后，按 crtl+s 保存即可&lt;/p&gt;
+&lt;p&gt;回到 blog 文件夹下，上级右键打开 gitbash 命令行，输入&lt;/p&gt;
+&lt;figure class=&#34;highlight verilog&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo clean           &lt;span class=&#34;comment&#34;&gt;//清空历史命令&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo &lt;span class=&#34;keyword&#34;&gt;generate&lt;/span&gt;        &lt;span class=&#34;comment&#34;&gt;//部署hexo，其中generate可以简写成g&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo server          &lt;span class=&#34;comment&#34;&gt;//形成静态页面，测试你的博客是否部署完成，server也可以简写成s&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在浏览器中输入 https://localhost:4000 测试运行结果，得到的是默认的主题，等上传成功之后可以自行修改。&lt;/p&gt;
+&lt;h2 id=&#34;五-上传到github&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#五-上传到github&#34;&gt;#&lt;/a&gt; 五、上传到 GitHub&lt;/h2&gt;
+&lt;h3 id=&#34;1-安装插件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-安装插件&#34;&gt;#&lt;/a&gt; 1、安装插件&lt;/h3&gt;
+&lt;p&gt;命令：&lt;/p&gt;
+&lt;figure class=&#34;highlight ada&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-deployer-git &lt;span class=&#34;comment&#34;&gt;--save&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这样才能将你写好的文章托管到 GitHub 服务器上，让别人浏览到。（安装时间可能有点长，耐心等待即可）&lt;/p&gt;
+&lt;h3 id=&#34;2-执行命令完成托管&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-执行命令完成托管&#34;&gt;#&lt;/a&gt; 2、执行命令，完成托管&lt;/h3&gt;
+&lt;figure class=&#34;highlight awk&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo clean&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo g&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo s&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo d    &lt;span class=&#34;regexp&#34;&gt;//&lt;/span&gt;d是deploy的简写&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;注意：在 deploy 过程中要输入你的 username 及 passward，注意不要输错&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/11/1W9bUBNsc5LQoJx.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;当最后一行出现 INFO Deploy done：git 时，恭喜你，你的博客已经搭建完成了&lt;/p&gt;
+&lt;p&gt;在浏览器中输入：&lt;a href=&#34;http://yourgithubname.github.xn--io-iy2c4nti6iv4at8nz0coybw89b2qbgz1p6sb&#34;&gt;http://yourgithubname.github.io 就可以看到你的个人博客了&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/11/f17OJGexZFkSj6u.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;感觉 gitbash 中东西太多时可以输入 clear 清空命令。&lt;/p&gt;
+&lt;h2 id=&#34;六-更换主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#六-更换主题&#34;&gt;#&lt;/a&gt; 六、更换主题&lt;/h2&gt;
+&lt;p&gt;在浏览器中输入 hexo，点击其主页的 Themes 便可以看到很多炫酷的主题，你可以一个一个点开看一下效果，选择你喜欢的主题，点击它的名字，便可看到以下内容（以 smackdown 为例，看不懂英文可以点开他的中文文档）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/11/MCBvxdeAVDQg7pq.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;在搜索框中输入：smackdown，点击 smack down 进入以下界面：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/11/In1xQDBdfySUFiY.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;在 blog 文件夹下打开 gitbash，输入下图所示命令，安装主题，安装过程有点漫长，请耐心等待！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/11/oVWIBZdmTyCeXfc.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;安装完成之后，用 sublime 软件打开_config.yml 文件，修改下图所示内容，按住 ctrl+s 保存&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/11/4oB3unECqUXIZtr.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;之后，在 gitbash 控制面板中依次输入命令：&lt;/p&gt;
+&lt;figure class=&#34;highlight ebnf&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;hexo clean&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;hexo g&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;hexo s&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;hexo d&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在浏览器中输入你的域名，就可以看到你换过新主题的博客了！！！&lt;/p&gt;
+&lt;p&gt;## 七、搭建过程中踩过的坑及解决方法&lt;/p&gt;
+&lt;h3 id=&#34;1-建立好github和本地的ssh链接但gitio网址却依然是git原来的普通界面hexo中出现you-have-to-configure-the-deployment-settings-in-_configyml-first&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-建立好github和本地的ssh链接但gitio网址却依然是git原来的普通界面hexo中出现you-have-to-configure-the-deployment-settings-in-_configyml-first&#34;&gt;#&lt;/a&gt; 1、建立好 github 和本地的 ssh 链接，但 git.io 网址却依然是 git 原来的普通界面，hexo 中出现：you have to configure the deployment settings in _config,yml first!&lt;/h3&gt;
+&lt;p&gt;原因：代码不够规范&lt;/p&gt;
+&lt;p&gt;解决方法：代码对齐&lt;/p&gt;
+&lt;figure class=&#34;highlight dts&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;symbol&#34;&gt;deploy:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;symbol&#34;&gt;  type:&lt;/span&gt; git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;symbol&#34;&gt;  repo:&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;symbol&#34;&gt;  branch:&lt;/span&gt; master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;注意注意注意！冒号后边一定要有空格，repo 不要打成 rebo，血的教训嗷！&lt;/p&gt;
+&lt;p&gt;再运行一次，就恢复正常了。&lt;/p&gt;
+&lt;h3 id=&#34;2-代码也规范没有问题但hexo-d还是报错&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-代码也规范没有问题但hexo-d还是报错&#34;&gt;#&lt;/a&gt; 2、代码也规范，没有问题，但 hexo d 还是报错&lt;/h3&gt;
+&lt;figure class=&#34;highlight subunit&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;ERROR &lt;/span&gt;Deployer not found: git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;原因：没有安装 hexo-deployer-git 插件&lt;/p&gt;
+&lt;p&gt;解决方法：&lt;/p&gt;
+&lt;figure class=&#34;highlight ada&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-deployer-git &lt;span class=&#34;comment&#34;&gt;--save&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;3-当你试图克隆别人的repo时或者克隆别人的主题时会出现这种报错&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-当你试图克隆别人的repo时或者克隆别人的主题时会出现这种报错&#34;&gt;#&lt;/a&gt; 3、当你试图克隆别人的 repo 时或者克隆别人的主题时会出现这种报错：&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/11/Aa5kxB1XE8I4vQz.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;原因：未知&lt;/p&gt;
+&lt;p&gt;解决方法：把 https 换成 git，再运行，就不会再报错了&lt;/p&gt;
+&lt;h2 id=&#34;4-更换主题hexo-d后报错如下所示&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-更换主题hexo-d后报错如下所示&#34;&gt;#&lt;/a&gt; 4、更换主题，hexo d 后报错，如下所示：&lt;/h2&gt;
+&lt;figure class=&#34;highlight pgsql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;On&lt;/span&gt; branch master &lt;span class=&#34;keyword&#34;&gt;nothing&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;to&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;commit&lt;/span&gt;, working tree clean ERROR: Repository &lt;span class=&#34;keyword&#34;&gt;not&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;found&lt;/span&gt;. fatal: Could &lt;span class=&#34;keyword&#34;&gt;not&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;read&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;from&lt;/span&gt; remote repository.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;原因：未知&lt;/p&gt;
+&lt;p&gt;解决方法：（暴力解决）&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;rm&lt;/span&gt; -rf .deploy&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo g&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;暴力但有效&lt;/p&gt;
+&lt;p&gt;之后你便可以看到你美美的博客啦！&lt;/p&gt;
+</content>
+        <category term="随笔" />
+        <updated>2021-05-08T13:37:19.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://liujiayi7.github.io/2021/05/06/Ubuntu%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4/</id>
+        <title>Ubuntu系统安装步骤</title>
+        <link rel="alternate" href="https://liujiayi7.github.io/2021/05/06/Ubuntu%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4/"/>
+        <content type="html">&lt;h1 id=&#34;ubuntu系统安装步骤在vmware虚拟机软件下安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ubuntu系统安装步骤在vmware虚拟机软件下安装&#34;&gt;#&lt;/a&gt; ubuntu 系统安装步骤（在 VMware 虚拟机软件下安装）&lt;/h1&gt;
+&lt;h2 id=&#34;一-安装vmware软件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-安装vmware软件&#34;&gt;#&lt;/a&gt; 一、安装 VMware 软件&lt;/h2&gt;
+&lt;p&gt;###1、在官网下载&lt;/p&gt;
+&lt;p&gt;​      1.1、点击下载链接：&lt;a href=&#34;https://my.vmware.com/en/web/vmware/downloads/#all_products&#34;&gt;All Downloads (vmware.com)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;​      1.2、在该链接打开界面下找到&lt;strong&gt; Desktop &amp;amp; End-User Computing&lt;/strong&gt; 这一专栏随意选择 VMware Workstation pro 或者 VMware Workstation player 后的 Download Product 即可，下载时间有点漫长，请耐心等待…&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/07/XSPEIHB8fevzZtl.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/07/fuhKXU5rSHc1d9w.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;注意：下载过程中一路 next 即可，最好下载在 c 盘上。&lt;/p&gt;
+&lt;p&gt;## 二、安装 Ubuntu 系统&lt;/p&gt;
+&lt;p&gt;###1、新建虚拟机&lt;/p&gt;
+&lt;p&gt;​      打开 VMware，点击左上方文件，选择新建虚拟机，如下图所示：&lt;/p&gt;
+&lt;p&gt;​      &lt;img src=&#34;https://i.loli.net/2021/05/07/9YMIJdyf4XPpnsE.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;​      &lt;img src=&#34;https://i.loli.net/2021/05/07/dVAkGFKNWTXIhO6.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;###2、安装 Ubuntu 系统&lt;/p&gt;
+&lt;p&gt;####2.1、一路 next&lt;/p&gt;
+&lt;p&gt;​     注意：此处选择安装程序光盘映像文件，我们安装的是 Ubuntu 系统，则需要配置 ubuntu 光盘映像文件，若没有光盘映像文件，可在网上下载（图片上是我的电脑上已经下载过的）。&lt;/p&gt;
+&lt;p&gt;​    可以到官网下载，下载地址 http://www.ubuntu.com.cn/&lt;br&gt;
+​    注意：下载后的镜像文件最好保存除 C 盘之外的其他盘中标记过的新建的文件夹中，保持 C 盘空间充足，又能在配置 Ubuntu 系统镜像文件时准确找到该文件的位置。如下图所示：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/07/FXVaSQsxbGh4ewd.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;####2.2、配置镜像文件&lt;/p&gt;
+&lt;p&gt;​    &lt;img src=&#34;https://i.loli.net/2021/05/07/l4xoVDnr9kAE8qm.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;然后一直点击下一步…&lt;/p&gt;
+&lt;p&gt;####2.3、设置用户名和密码&lt;/p&gt;
+&lt;p&gt;注意：用户名和密码随意设置，如果可以的话，建议用户名和密码选择设置成一样的，防止遗忘&lt;/p&gt;
+&lt;p&gt;​    &lt;img src=&#34;https://i.loli.net/2021/05/07/u75eKwOb1QTDvWH.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/07/ENJlD6tBaV45yTr.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;注意：虚拟机名称可随便设置，将虚拟机放在与虚拟机名称相同的除 C 盘之外的其他盘中！&lt;/p&gt;
+&lt;p&gt;之后便一路 next…&lt;/p&gt;
+&lt;p&gt;####2.4、自定义配置文件&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/07/4j2T6DIpuSQHGso.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;点击自定义配置文件，即可根据自身需求进行虚拟机功能的配置，如下所示：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/07/RwrKuAj3Sepq5Uo.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/07/1yzoedanSI8jm3M.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/07/9Tl1k6mhUVJgIDH.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/07/2KHPLAYnMX1f9Be.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;最后，点击完成，那么我们的虚拟机就新建成功了&lt;/p&gt;
+&lt;p&gt;注意：如果自定义过程中属性配置错误，不要担心，我们随后可以在虚拟机设置中更改属性，所以，放心大胆的尝试就行！！！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/05/07/jimRf4yhz2uGJFp.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;恭喜你，至此，虚拟机系统已经安装配置完成了，之后便可以操纵你的虚拟机系统了！&lt;/p&gt;
+</content>
+        <category term="随笔" />
+        <updated>2021-05-06T12:26:58.000Z</updated>
+    </entry>
+</feed>

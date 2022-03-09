@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>LiuJiaYi7&#39;s blog • Posts by &#34;记录&#34; tag</title>
+        <link>https://LiuJiaYi7.github.io</link>
+        <description>欢迎来到小七的笔记空间，我们在这里一起相互交流学习吧！</description>
+        <language>zh-CN</language>
+        <pubDate>Sun, 22 Aug 2021 20:06:15 +0800</pubDate>
+        <lastBuildDate>Sun, 22 Aug 2021 20:06:15 +0800</lastBuildDate>
+        <category>随笔</category>
+        <category>笔记</category>
+        <category>习题</category>
+        <category>基本命令</category>
+        <category>记录</category>
+        <category>小结</category>
+        <item>
+            <guid isPermalink="true">https://liujiayi7.github.io/2021/08/22/%E4%BF%AE%E6%94%B9%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8docker%E7%8E%AF%E5%A2%83%E4%B8%8Bmysql%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81/</guid>
+            <title>修改云服务器docker环境下mysql数据库密码</title>
+            <link>https://liujiayi7.github.io/2021/08/22/%E4%BF%AE%E6%94%B9%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8docker%E7%8E%AF%E5%A2%83%E4%B8%8Bmysql%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81/</link>
+            <category>记录</category>
+            <pubDate>Sun, 22 Aug 2021 20:06:15 +0800</pubDate>
+            <description><![CDATA[ &lt;figure class=&#34;highlight awk&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;. docker ps  &lt;span class=&#34;regexp&#34;&gt;//&lt;/span&gt;列出容器相关信息&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;注意查看 NAMES 下 mysql 对应的你的命名是啥&lt;/p&gt;
+&lt;figure class=&#34;highlight armasm&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;. docker exec -&lt;span class=&#34;keyword&#34;&gt;it&lt;/span&gt; ok-mysql bash  &lt;span class=&#34;comment&#34;&gt;//进入容器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;注意名字是刚才查看到的 NAMES 底下的名字&lt;/p&gt;
+&lt;figure class=&#34;highlight awk&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;. echo &lt;span class=&#34;string&#34;&gt;&amp;quot;skip-grant-tables&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; &lt;span class=&#34;regexp&#34;&gt;/etc/my&lt;/span&gt;sql&lt;span class=&#34;regexp&#34;&gt;/conf.d/&lt;/span&gt;docker.cnf  &lt;span class=&#34;regexp&#34;&gt;//&lt;/span&gt;设置跳过权限表的加载 &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;注意：这就意味着任何用户都能登录进来，并进行任何操作，相当不安全。所以尽快搞完完事&lt;/p&gt;
+&lt;figure class=&#34;highlight awk&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;. &lt;span class=&#34;keyword&#34;&gt;exit&lt;/span&gt; &lt;span class=&#34;regexp&#34;&gt;//&lt;/span&gt;退出容器&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;. docker restart ok-mysql &lt;span class=&#34;regexp&#34;&gt;//&lt;/span&gt;从新启动mysql 还是要注意名字&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;6&lt;/span&gt;. docker exec -it ok-mysql bash  &lt;span class=&#34;regexp&#34;&gt;//&lt;/span&gt;再此进入容器&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;7&lt;/span&gt;. mysql -u root &lt;span class=&#34;regexp&#34;&gt;//&lt;/span&gt; 登录mysql,此时无需密码&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;8&lt;/span&gt;. flush privileges;  &lt;span class=&#34;regexp&#34;&gt;//&lt;/span&gt;更新权限&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;9&lt;/span&gt;. alter user &lt;span class=&#34;string&#34;&gt;&amp;#x27;root&amp;#x27;&lt;/span&gt;@&lt;span class=&#34;string&#34;&gt;&amp;#x27;localhost&amp;#x27;&lt;/span&gt; identified by &lt;span class=&#34;string&#34;&gt;&amp;#x27;你想改成的密码&amp;#x27;&lt;/span&gt;;   &lt;span class=&#34;regexp&#34;&gt;//&lt;/span&gt;修改密码&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;. &lt;span class=&#34;keyword&#34;&gt;exit&lt;/span&gt;   &lt;span class=&#34;regexp&#34;&gt;//&lt;/span&gt; 退出mysql&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;11&lt;/span&gt;. sed -i &lt;span class=&#34;string&#34;&gt;&amp;quot;s/skip-grant-tables/ /&amp;quot;&lt;/span&gt; &lt;span class=&#34;regexp&#34;&gt;/etc/my&lt;/span&gt;sql&lt;span class=&#34;regexp&#34;&gt;/conf.d/&lt;/span&gt;docker.cnf  &lt;span class=&#34;regexp&#34;&gt;//&lt;/span&gt;替换掉刚才加的跳过权限表的加载参数&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;12&lt;/span&gt;. &lt;span class=&#34;keyword&#34;&gt;exit&lt;/span&gt;  &lt;span class=&#34;regexp&#34;&gt;//&lt;/span&gt;退出容器&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;13&lt;/span&gt;. docker restart ok-mysql   &lt;span class=&#34;regexp&#34;&gt;//&lt;/span&gt;再次重新启动mysql&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;结束了，这样就可以使用新密码来登陆了，但是学长说更新密码可能会导致 wordpress 啥的登录不上去，但是我没碰到，可能还没反应过来，没关系，如果登不上去了只要同步更新一下数据库密码就 OK 了.&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
